@@ -1,0 +1,44 @@
+# RooDojo submodule registry. Each workflow is its own git repo with
+# independent history and a `baseline` tag. The URL placeholders here
+# point to the public repos we'll publish each workflow under once
+# they're ready to ship; until then, the submodules exist locally and
+# the engine works inside each one.
+#
+# To switch a submodule to its real GitHub URL after publishing:
+#   git config -f .gitmodules submodule.<name>.url <new-url>
+#   cd <path> && git remote set-url origin <new-url> && git push -u origin main --tags
+
+[submodule "ppo-bipedal-hardcore"]
+	path = reinforcement-learning/ppo-bipedal-hardcore
+	url = https://github.com/Remoroo/ppo-bipedal-hardcore.git
+	branch = main
+
+[submodule "dog-run-locomotion"]
+	path = reinforcement-learning/dog-run-locomotion
+	url = https://github.com/Remoroo/dog-run-locomotion.git
+	branch = main
+
+[submodule "eye-in-hand-calibration"]
+	path = robotics/eye-in-hand-calibration
+	url = https://github.com/Remoroo/eye-in-hand-calibration.git
+	branch = main
+
+[submodule "tts-neural-voice"]
+	path = speech/tts-neural-voice
+	url = https://github.com/Remoroo/tts-neural-voice.git
+	branch = main
+
+[submodule "asr-speech-recognition"]
+	path = speech/asr-speech-recognition
+	url = https://github.com/Remoroo/asr-speech-recognition.git
+	branch = main
+
+[submodule "cifar10-speedrun"]
+	path = vision/cifar10-speedrun
+	url = https://github.com/Remoroo/cifar10-speedrun.git
+	branch = main
+
+[submodule "higgs-boost"]
+	path = scientific-ml/higgs-boost
+	url = https://github.com/Remoroo/higgs-boost.git
+	branch = main

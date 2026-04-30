@@ -122,6 +122,44 @@ The constrained workflows target Apple Silicon by default — CIFAR-10 uses
 PyTorch MPS, Higgs runs on a single CPU core via pinned BLAS / OpenMP
 threads.
 
+## Submodules + auto-bump
+
+Each workflow lives in its own GitHub repo (independent history,
+independent `baseline` tag). RooDojo tracks them as submodules — that
+way the engine's per-experiment commit/reset loop operates inside one
+workflow without touching siblings.
+
+The submodule pins in this repo are kept current automatically. Each
+workflow repo carries a `.github/workflows/bump-roodojo.yml` that
+fires on every push to its `main` branch and updates the gitlink in
+RooDojo. Result: pushes from the engine show up here within ~30
+seconds — no manual `cd .. && git submodule update && git push` ever
+again.
+
+One-time setup (per maintainer who wants auto-bump enabled):
+
+```bash
+# 1. Create a fine-grained PAT at github.com/settings/personal-access-tokens
+#    - Repository access: Remoroo/RooDojo
+#    - Permissions: Contents (read+write)
+# 2. Distribute it as ROODOJO_TOKEN to each workflow repo:
+./scripts/setup-auto-bump.sh <pat-token>
+```
+
+Cloning RooDojo with all workflows checked out:
+
+```bash
+git clone --recurse-submodules https://github.com/Remoroo/RooDojo.git
+# or, on an existing clone:
+git submodule update --init --recursive
+```
+
+To pull the latest pinned state of every workflow:
+
+```bash
+git pull && git submodule update --recursive
+```
+
 ## How to read a workflow
 
 Open the workflow folder. Read three files in order:

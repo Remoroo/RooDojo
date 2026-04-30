@@ -1,0 +1,438 @@
+Using MPS device
+Device: mps
+n_envs: 16
+Stage 1: BipedalWalker-v3         | 4000000 steps | budget 3600s | goal 250
+Stage 2: BipedalWalkerHardcore-v3  | 10000000 steps | budget 7200s | goal 300
+Total steps: 14000000
+/Users/adham/Downloads/remoroo_offline_engine/.venv/lib/python3.13/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+
+============================================================
+  Stage 1: BipedalWalker-v3
+  4000000 steps | budget 3600s | 16 envs
+  rollout: 2048/env = 32768 total/update
+  reward_norm: False | entropy: 0.001
+  gamma: 0.99 | gae_lambda: 0.95
+============================================================
+
+[Stage 1] Step    32768 | Avg:   -98.43 | Best:   -98.43 | Loss: 33.2121 | LR: 2.98e-04 | Clip: 0.218 | Steps/s: 2862 | 16s
+[Stage 1] Step    65536 | Avg:   -92.61 | Best:   -92.61 | Loss: 8.0893 | LR: 2.95e-04 | Clip: 0.217 | Steps/s: 2903 | 30s
+[Stage 1] Step    98304 | Avg:   -92.55 | Best:   -92.55 | Loss: 13.0391 | LR: 2.93e-04 | Clip: 0.215 | Steps/s: 2925 | 45s
+[Stage 1] Step   131072 | Avg:   -93.10 | Best:   -92.55 | Loss: 3.7713 | LR: 2.90e-04 | Clip: 0.213 | Steps/s: 2956 | 60s
+[Stage 1] Step   163840 | Avg:   -87.95 | Best:   -87.95 | Loss: 1.9168 | LR: 2.88e-04 | Clip: 0.212 | Steps/s: 2982 | 74s
+[Stage 1] Step   196608 | Avg:   -80.84 | Best:   -80.84 | Loss: 1.0936 | LR: 2.85e-04 | Clip: 0.210 | Steps/s: 3001 | 89s
+[Stage 1] Step   229376 | Avg:   -76.90 | Best:   -76.90 | Loss: 1.1406 | LR: 2.83e-04 | Clip: 0.209 | Steps/s: 3025 | 103s
+[Stage 1] Step   262144 | Avg:   -76.30 | Best:   -76.30 | Loss: 1.6949 | LR: 2.80e-04 | Clip: 0.207 | Steps/s: 3036 | 118s
+[Stage 1] Step   294912 | Avg:   -76.27 | Best:   -76.27 | Loss: 1.4075 | LR: 2.78e-04 | Clip: 0.205 | Steps/s: 3014 | 134s
+[Stage 1] Step   327680 | Avg:   -73.09 | Best:   -73.09 | Loss: 0.6546 | LR: 2.75e-04 | Clip: 0.204 | Steps/s: 3026 | 149s
+[Stage 1] Step   360448 | Avg:   -73.72 | Best:   -73.09 | Loss: 0.9456 | LR: 2.73e-04 | Clip: 0.202 | Steps/s: 3040 | 163s
+[Stage 1] Step   393216 | Avg:   -71.10 | Best:   -71.10 | Loss: 0.3898 | LR: 2.71e-04 | Clip: 0.200 | Steps/s: 3049 | 178s
+[Stage 1] Step   425984 | Avg:   -66.23 | Best:   -66.23 | Loss: 1.1562 | LR: 2.68e-04 | Clip: 0.199 | Steps/s: 3061 | 193s
+[Stage 1] Step   458752 | Avg:   -67.33 | Best:   -66.23 | Loss: 1.8904 | LR: 2.66e-04 | Clip: 0.197 | Steps/s: 3066 | 208s
+[Stage 1] Step   491520 | Avg:   -64.23 | Best:   -64.23 | Loss: 0.3620 | LR: 2.63e-04 | Clip: 0.195 | Steps/s: 3064 | 223s
+[Stage 1] Step   524288 | Avg:   -63.04 | Best:   -63.04 | Loss: 0.7101 | LR: 2.61e-04 | Clip: 0.194 | Steps/s: 3060 | 238s
+[Stage 1] Step   557056 | Avg:   -61.75 | Best:   -61.75 | Loss: 0.7920 | LR: 2.58e-04 | Clip: 0.192 | Steps/s: 3037 | 254s
+[Stage 1] Step   589824 | Avg:   -60.11 | Best:   -60.11 | Loss: 0.9462 | LR: 2.56e-04 | Clip: 0.191 | Steps/s: 3043 | 269s
+[Stage 1] Step   622592 | Avg:   -57.39 | Best:   -57.39 | Loss: 0.0786 | LR: 2.53e-04 | Clip: 0.189 | Steps/s: 3057 | 284s
+[Stage 1] Step   655360 | Avg:   -54.44 | Best:   -54.44 | Loss: 0.1403 | LR: 2.51e-04 | Clip: 0.187 | Steps/s: 3070 | 298s
+[Stage 1] Step   688128 | Avg:   -50.75 | Best:   -50.75 | Loss: 0.0318 | LR: 2.48e-04 | Clip: 0.186 | Steps/s: 3087 | 313s
+[Stage 1] Step   720896 | Avg:   -43.61 | Best:   -43.61 | Loss: 0.2348 | LR: 2.46e-04 | Clip: 0.184 | Steps/s: 3104 | 327s
+[Stage 1] Step   753664 | Avg:   -37.28 | Best:   -37.28 | Loss: 0.0229 | LR: 2.43e-04 | Clip: 0.182 | Steps/s: 3127 | 341s
+[Stage 1] Step   786432 | Avg:   -32.63 | Best:   -32.63 | Loss: 0.1097 | LR: 2.41e-04 | Clip: 0.181 | Steps/s: 3143 | 356s
+[Stage 1] Step   819200 | Avg:   -26.27 | Best:   -26.27 | Loss: 0.3599 | LR: 2.39e-04 | Clip: 0.179 | Steps/s: 3115 | 372s
+[Stage 1] Step   851968 | Avg:   -19.93 | Best:   -19.93 | Loss: 0.2949 | LR: 2.36e-04 | Clip: 0.177 | Steps/s: 3133 | 386s
+[Stage 1] Step   884736 | Avg:   -13.64 | Best:   -13.64 | Loss: 0.1929 | LR: 2.34e-04 | Clip: 0.176 | Steps/s: 3157 | 400s
+[Stage 1] Step   917504 | Avg:    -8.20 | Best:    -8.20 | Loss: 0.1931 | LR: 2.31e-04 | Clip: 0.174 | Steps/s: 3165 | 414s
+[Stage 1] Step   950272 | Avg:    -1.97 | Best:    -1.97 | Loss: 0.5511 | LR: 2.29e-04 | Clip: 0.172 | Steps/s: 3158 | 429s
+[Stage 1] Step   983040 | Avg:     8.19 | Best:     8.19 | Loss: 0.0765 | LR: 2.26e-04 | Clip: 0.171 | Steps/s: 3174 | 444s
+[Stage 1] Step  1015808 | Avg:    17.47 | Best:    17.47 | Loss: 0.0759 | LR: 2.24e-04 | Clip: 0.169 | Steps/s: 3190 | 458s
+[Stage 1] Step  1048576 | Avg:    25.46 | Best:    25.46 | Loss: 0.5510 | LR: 2.21e-04 | Clip: 0.168 | Steps/s: 3202 | 473s
+[Stage 1] Step  1081344 | Avg:    39.87 | Best:    39.87 | Loss: 0.4020 | LR: 2.19e-04 | Clip: 0.166 | Steps/s: 3196 | 488s
+[Stage 1] Step  1114112 | Avg:    55.02 | Best:    55.02 | Loss: 0.0975 | LR: 2.16e-04 | Clip: 0.164 | Steps/s: 3208 | 502s
+[Stage 1] Step  1146880 | Avg:    64.64 | Best:    64.64 | Loss: 0.8757 | LR: 2.14e-04 | Clip: 0.163 | Steps/s: 3212 | 517s
+[Stage 1] Step  1179648 | Avg:    73.27 | Best:    73.27 | Loss: 0.3116 | LR: 2.12e-04 | Clip: 0.161 | Steps/s: 3226 | 531s
+[Stage 1] Step  1212416 | Avg:    88.57 | Best:    88.57 | Loss: 0.3027 | LR: 2.09e-04 | Clip: 0.159 | Steps/s: 3234 | 545s
+[Stage 1] Step  1245184 | Avg:   103.26 | Best:   103.26 | Loss: 0.1415 | LR: 2.07e-04 | Clip: 0.158 | Steps/s: 3242 | 559s
+[Stage 1] Step  1277952 | Avg:   115.98 | Best:   115.98 | Loss: 0.1355 | LR: 2.04e-04 | Clip: 0.156 | Steps/s: 3253 | 573s
+[Stage 1] Step  1310720 | Avg:   131.97 | Best:   131.97 | Loss: 0.3427 | LR: 2.02e-04 | Clip: 0.154 | Steps/s: 3263 | 587s
+[Stage 1] Step  1343488 | Avg:   139.40 | Best:   139.40 | Loss: 0.7049 | LR: 1.99e-04 | Clip: 0.153 | Steps/s: 3256 | 603s
+[Stage 1] Step  1376256 | Avg:   150.89 | Best:   150.89 | Loss: 0.1934 | LR: 1.97e-04 | Clip: 0.151 | Steps/s: 3261 | 618s
+[Stage 1] Step  1409024 | Avg:   152.66 | Best:   152.66 | Loss: 0.3498 | LR: 1.94e-04 | Clip: 0.150 | Steps/s: 3267 | 632s
+[Stage 1] Step  1441792 | Avg:   160.37 | Best:   160.37 | Loss: 0.1751 | LR: 1.92e-04 | Clip: 0.148 | Steps/s: 3279 | 646s
+[Stage 1] Step  1474560 | Avg:   170.81 | Best:   170.81 | Loss: 0.2026 | LR: 1.89e-04 | Clip: 0.146 | Steps/s: 3288 | 660s
+[Stage 1] Step  1507328 | Avg:   181.14 | Best:   181.14 | Loss: 0.1885 | LR: 1.87e-04 | Clip: 0.145 | Steps/s: 3285 | 674s
+[Stage 1] Step  1540096 | Avg:   184.46 | Best:   184.46 | Loss: 0.6821 | LR: 1.84e-04 | Clip: 0.143 | Steps/s: 3290 | 688s
+[Stage 1] Step  1572864 | Avg:   192.69 | Best:   192.69 | Loss: 0.4050 | LR: 1.82e-04 | Clip: 0.141 | Steps/s: 3298 | 702s
+[Stage 1] Step  1605632 | Avg:   195.44 | Best:   195.44 | Loss: 0.4731 | LR: 1.80e-04 | Clip: 0.140 | Steps/s: 3302 | 717s
+[Stage 1] Step  1638400 | Avg:   199.89 | Best:   199.89 | Loss: 0.4720 | LR: 1.77e-04 | Clip: 0.138 | Steps/s: 3292 | 731s
+[Stage 1] Step  1671168 | Avg:   201.33 | Best:   201.33 | Loss: 0.3519 | LR: 1.75e-04 | Clip: 0.136 | Steps/s: 3299 | 745s
+[Stage 1] Step  1703936 | Avg:   203.74 | Best:   203.74 | Loss: 0.4582 | LR: 1.72e-04 | Clip: 0.135 | Steps/s: 3307 | 759s
+[Stage 1] Step  1736704 | Avg:   208.14 | Best:   208.14 | Loss: 0.2346 | LR: 1.70e-04 | Clip: 0.133 | Steps/s: 3293 | 778s
+[Stage 1] Step  1769472 | Avg:   212.52 | Best:   212.52 | Loss: 0.2535 | LR: 1.67e-04 | Clip: 0.132 | Steps/s: 3215 | 797s
+[Stage 1] Step  1802240 | Avg:   216.84 | Best:   216.84 | Loss: 0.2761 | LR: 1.65e-04 | Clip: 0.130 | Steps/s: 3224 | 811s
+[Stage 1] Step  1835008 | Avg:   220.19 | Best:   220.19 | Loss: 0.2519 | LR: 1.62e-04 | Clip: 0.128 | Steps/s: 3233 | 825s
+[Stage 1] Step  1867776 | Avg:   224.93 | Best:   224.93 | Loss: 0.2410 | LR: 1.60e-04 | Clip: 0.127 | Steps/s: 3238 | 840s
+[Stage 1] Step  1900544 | Avg:   221.62 | Best:   224.93 | Loss: 1.0632 | LR: 1.57e-04 | Clip: 0.125 | Steps/s: 3250 | 854s
+[Stage 1] Step  1933312 | Avg:   223.36 | Best:   224.93 | Loss: 0.2667 | LR: 1.55e-04 | Clip: 0.123 | Steps/s: 3261 | 868s
+[Stage 1] Step  1966080 | Avg:   223.12 | Best:   224.93 | Loss: 0.4668 | LR: 1.53e-04 | Clip: 0.122 | Steps/s: 3270 | 882s
+[Stage 1] Step  1998848 | Avg:   223.90 | Best:   224.93 | Loss: 0.2613 | LR: 1.50e-04 | Clip: 0.120 | Steps/s: 3239 | 898s
+[Stage 1] Step  2031616 | Avg:   224.27 | Best:   224.93 | Loss: 0.2745 | LR: 1.48e-04 | Clip: 0.118 | Steps/s: 3249 | 912s
+[Stage 1] Step  2064384 | Avg:   227.29 | Best:   227.29 | Loss: 0.6583 | LR: 1.45e-04 | Clip: 0.117 | Steps/s: 3258 | 926s
+[Stage 1] Step  2097152 | Avg:   228.07 | Best:   228.07 | Loss: 0.2462 | LR: 1.43e-04 | Clip: 0.115 | Steps/s: 3267 | 940s
+[Stage 1] Step  2129920 | Avg:   228.70 | Best:   228.70 | Loss: 0.4940 | LR: 1.40e-04 | Clip: 0.114 | Steps/s: 3278 | 954s
+[Stage 1] Step  2162688 | Avg:   229.80 | Best:   229.80 | Loss: 0.2606 | LR: 1.38e-04 | Clip: 0.112 | Steps/s: 3282 | 968s
+[Stage 1] Step  2195456 | Avg:   230.10 | Best:   230.10 | Loss: 0.3059 | LR: 1.35e-04 | Clip: 0.110 | Steps/s: 3296 | 982s
+[Stage 1] Step  2228224 | Avg:   233.56 | Best:   233.56 | Loss: 0.2706 | LR: 1.33e-04 | Clip: 0.109 | Steps/s: 3305 | 996s
+[Stage 1] Step  2260992 | Avg:   236.15 | Best:   236.15 | Loss: 0.2986 | LR: 1.30e-04 | Clip: 0.107 | Steps/s: 3295 | 1010s
+[Stage 1] Step  2293760 | Avg:   237.85 | Best:   237.85 | Loss: 0.3125 | LR: 1.28e-04 | Clip: 0.105 | Steps/s: 3288 | 1025s
+[Stage 1] Step  2326528 | Avg:   238.40 | Best:   238.40 | Loss: 0.3119 | LR: 1.26e-04 | Clip: 0.104 | Steps/s: 3293 | 1039s
+[Stage 1] Step  2359296 | Avg:   240.36 | Best:   240.36 | Loss: 0.3194 | LR: 1.23e-04 | Clip: 0.102 | Steps/s: 3300 | 1053s
+[Stage 1] Step  2392064 | Avg:   241.76 | Best:   241.76 | Loss: 0.3085 | LR: 1.21e-04 | Clip: 0.100 | Steps/s: 3311 | 1067s
+[Stage 1] Step  2424832 | Avg:   242.57 | Best:   242.57 | Loss: 0.3261 | LR: 1.18e-04 | Clip: 0.099 | Steps/s: 3310 | 1081s
+[Stage 1] Step  2457600 | Avg:   243.30 | Best:   243.30 | Loss: 0.3031 | LR: 1.16e-04 | Clip: 0.097 | Steps/s: 3316 | 1095s
+[Stage 1] Step  2490368 | Avg:   244.81 | Best:   244.81 | Loss: 0.3273 | LR: 1.13e-04 | Clip: 0.095 | Steps/s: 3289 | 1110s
+[Stage 1] Step  2523136 | Avg:   245.78 | Best:   245.78 | Loss: 0.3033 | LR: 1.11e-04 | Clip: 0.094 | Steps/s: 3295 | 1124s
+[Stage 1] Step  2555904 | Avg:   246.78 | Best:   246.78 | Loss: 0.3179 | LR: 1.08e-04 | Clip: 0.092 | Steps/s: 3299 | 1139s
+[Stage 1] Step  2588672 | Avg:   247.29 | Best:   247.29 | Loss: 0.2905 | LR: 1.06e-04 | Clip: 0.091 | Steps/s: 3309 | 1153s
+[Stage 1] Step  2621440 | Avg:   247.69 | Best:   247.69 | Loss: 0.3221 | LR: 1.03e-04 | Clip: 0.089 | Steps/s: 3316 | 1167s
+[Stage 1] Step  2654208 | Avg:   248.46 | Best:   248.46 | Loss: 0.3400 | LR: 1.01e-04 | Clip: 0.087 | Steps/s: 3318 | 1181s
+[Stage 1] Step  2686976 | Avg:   249.63 | Best:   249.63 | Loss: 0.2850 | LR: 9.85e-05 | Clip: 0.086 | Steps/s: 3325 | 1195s
+[Stage 1] Step  2719744 | Avg:   249.94 | Best:   249.94 | Loss: 0.3432 | LR: 9.60e-05 | Clip: 0.084 | Steps/s: 3312 | 1210s
+[Stage 1] Step  2752512 | Avg:   251.10 | Best:   251.10 | Loss: 0.3177 | LR: 9.36e-05 | Clip: 0.082 | Steps/s: 3322 | 1224s
+
+✓ [Stage 1] Goal reached! Avg reward: 251.10
+
+Stage 1 result: best_avg=251.10, steps=2752512
+Checkpoint saved to checkpoint.pt
+
+--- Stage 2 preparation ---
+  log_std before reset: [-1.0341787 -1.0087221 -1.1220998 -1.2175783]
+  log_std after reset:  [-1.0341787 -1.0087221 -1.1220998 -1.2039728]
+  entropy_coef: 0.005, gamma: 0.995, lr: 0.0003
+
+============================================================
+  Stage 2: BipedalWalkerHardcore-v3
+  10000000 steps | budget 7200s | 16 envs
+  rollout: 2048/env = 32768 total/update
+  reward_norm: True | entropy: 0.005
+  gamma: 0.995 | gae_lambda: 0.95
+============================================================
+
+[Stage 2] Step    32768 | Avg:   -78.82 | Best:   -78.82 | Loss: 3.6394 | LR: 2.99e-04 | Clip: 0.219 | Steps/s: 3341 | 14s
+[Stage 2] Step    65536 | Avg:   -73.12 | Best:   -73.12 | Loss: 1.4527 | LR: 2.98e-04 | Clip: 0.219 | Steps/s: 3330 | 29s
+[Stage 2] Step    98304 | Avg:   -70.36 | Best:   -70.36 | Loss: 0.7564 | LR: 2.97e-04 | Clip: 0.218 | Steps/s: 3320 | 43s
+[Stage 2] Step   131072 | Avg:   -72.98 | Best:   -70.36 | Loss: 0.6046 | LR: 2.96e-04 | Clip: 0.217 | Steps/s: 3315 | 57s
+[Stage 2] Step   163840 | Avg:   -65.28 | Best:   -65.28 | Loss: 0.5963 | LR: 2.95e-04 | Clip: 0.217 | Steps/s: 3275 | 73s
+[Stage 2] Step   196608 | Avg:   -62.97 | Best:   -62.97 | Loss: 0.3767 | LR: 2.94e-04 | Clip: 0.216 | Steps/s: 3266 | 88s
+[Stage 2] Step   229376 | Avg:   -63.91 | Best:   -62.97 | Loss: 0.3324 | LR: 2.93e-04 | Clip: 0.215 | Steps/s: 3248 | 103s
+[Stage 2] Step   262144 | Avg:   -61.01 | Best:   -61.01 | Loss: 0.2690 | LR: 2.92e-04 | Clip: 0.215 | Steps/s: 3249 | 118s
+[Stage 2] Step   294912 | Avg:   -57.00 | Best:   -57.00 | Loss: 0.2341 | LR: 2.91e-04 | Clip: 0.214 | Steps/s: 3256 | 132s
+[Stage 2] Step   327680 | Avg:   -56.45 | Best:   -56.45 | Loss: 0.1795 | LR: 2.90e-04 | Clip: 0.213 | Steps/s: 3253 | 147s
+[Stage 2] Step   360448 | Avg:   -56.48 | Best:   -56.45 | Loss: 0.1554 | LR: 2.89e-04 | Clip: 0.213 | Steps/s: 3249 | 161s
+[Stage 2] Step   393216 | Avg:   -53.97 | Best:   -53.97 | Loss: 0.1458 | LR: 2.88e-04 | Clip: 0.212 | Steps/s: 3253 | 176s
+[Stage 2] Step   425984 | Avg:   -56.98 | Best:   -53.97 | Loss: 0.1262 | LR: 2.87e-04 | Clip: 0.211 | Steps/s: 3256 | 191s
+[Stage 2] Step   458752 | Avg:   -52.97 | Best:   -52.97 | Loss: 0.1119 | LR: 2.86e-04 | Clip: 0.211 | Steps/s: 3221 | 206s
+[Stage 2] Step   491520 | Avg:   -53.30 | Best:   -52.97 | Loss: 0.1186 | LR: 2.85e-04 | Clip: 0.210 | Steps/s: 3218 | 221s
+[Stage 2] Step   524288 | Avg:   -47.02 | Best:   -47.02 | Loss: 0.0910 | LR: 2.84e-04 | Clip: 0.210 | Steps/s: 3221 | 235s
+[Stage 2] Step   557056 | Avg:   -53.95 | Best:   -47.02 | Loss: 0.0679 | LR: 2.83e-04 | Clip: 0.209 | Steps/s: 3210 | 250s
+[Stage 2] Step   589824 | Avg:   -49.32 | Best:   -47.02 | Loss: 0.0720 | LR: 2.82e-04 | Clip: 0.208 | Steps/s: 3183 | 266s
+[Stage 2] Step   622592 | Avg:   -50.36 | Best:   -47.02 | Loss: 0.0593 | LR: 2.81e-04 | Clip: 0.208 | Steps/s: 3180 | 281s
+[Stage 2] Step   655360 | Avg:   -47.88 | Best:   -47.02 | Loss: 0.0540 | LR: 2.80e-04 | Clip: 0.207 | Steps/s: 3189 | 295s
+[Stage 2] Step   688128 | Avg:   -45.82 | Best:   -45.82 | Loss: 0.0586 | LR: 2.79e-04 | Clip: 0.206 | Steps/s: 3187 | 310s
+[Stage 2] Step   720896 | Avg:   -48.07 | Best:   -45.82 | Loss: 0.0555 | LR: 2.78e-04 | Clip: 0.206 | Steps/s: 3184 | 325s
+[Stage 2] Step   753664 | Avg:   -35.67 | Best:   -35.67 | Loss: 0.0475 | LR: 2.77e-04 | Clip: 0.205 | Steps/s: 3153 | 340s
+[Stage 2] Step   786432 | Avg:   -36.18 | Best:   -35.67 | Loss: 0.0553 | LR: 2.76e-04 | Clip: 0.204 | Steps/s: 3163 | 355s
+[Stage 2] Step   819200 | Avg:   -39.94 | Best:   -35.67 | Loss: 0.0559 | LR: 2.75e-04 | Clip: 0.204 | Steps/s: 3174 | 369s
+[Stage 2] Step   851968 | Avg:   -46.81 | Best:   -35.67 | Loss: 0.0494 | LR: 2.74e-04 | Clip: 0.203 | Steps/s: 3185 | 383s
+[Stage 2] Step   884736 | Avg:   -55.75 | Best:   -35.67 | Loss: 0.0504 | LR: 2.73e-04 | Clip: 0.202 | Steps/s: 3183 | 398s
+[Stage 2] Step   917504 | Avg:   -50.81 | Best:   -35.67 | Loss: 0.0414 | LR: 2.72e-04 | Clip: 0.202 | Steps/s: 3194 | 412s
+[Stage 2] Step   950272 | Avg:   -50.15 | Best:   -35.67 | Loss: 0.0348 | LR: 2.71e-04 | Clip: 0.201 | Steps/s: 3201 | 427s
+[Stage 2] Step   983040 | Avg:   -50.13 | Best:   -35.67 | Loss: 0.0442 | LR: 2.71e-04 | Clip: 0.200 | Steps/s: 3208 | 441s
+[Stage 2] Step  1015808 | Avg:   -44.95 | Best:   -35.67 | Loss: 0.0507 | LR: 2.70e-04 | Clip: 0.200 | Steps/s: 3217 | 456s
+[Stage 2] Step  1048576 | Avg:   -48.55 | Best:   -35.67 | Loss: 0.0432 | LR: 2.69e-04 | Clip: 0.199 | Steps/s: 3218 | 471s
+[Stage 2] Step  1081344 | Avg:   -49.22 | Best:   -35.67 | Loss: 0.0481 | LR: 2.68e-04 | Clip: 0.198 | Steps/s: 3223 | 485s
+[Stage 2] Step  1114112 | Avg:   -49.12 | Best:   -35.67 | Loss: 0.0368 | LR: 2.67e-04 | Clip: 0.198 | Steps/s: 3231 | 499s
+[Stage 2] Step  1146880 | Avg:   -50.42 | Best:   -35.67 | Loss: 0.0265 | LR: 2.66e-04 | Clip: 0.197 | Steps/s: 3236 | 514s
+[Stage 2] Step  1179648 | Avg:   -47.98 | Best:   -35.67 | Loss: 0.0229 | LR: 2.65e-04 | Clip: 0.196 | Steps/s: 3238 | 528s
+[Stage 2] Step  1212416 | Avg:   -41.10 | Best:   -35.67 | Loss: 0.0379 | LR: 2.64e-04 | Clip: 0.196 | Steps/s: 3237 | 543s
+[Stage 2] Step  1245184 | Avg:   -43.33 | Best:   -35.67 | Loss: 0.0425 | LR: 2.63e-04 | Clip: 0.195 | Steps/s: 3244 | 557s
+[Stage 2] Step  1277952 | Avg:   -40.08 | Best:   -35.67 | Loss: 0.0293 | LR: 2.62e-04 | Clip: 0.194 | Steps/s: 3247 | 571s
+[Stage 2] Step  1310720 | Avg:   -39.66 | Best:   -35.67 | Loss: 0.0369 | LR: 2.61e-04 | Clip: 0.194 | Steps/s: 3198 | 587s
+[Stage 2] Step  1343488 | Avg:   -38.74 | Best:   -35.67 | Loss: 0.0343 | LR: 2.60e-04 | Clip: 0.193 | Steps/s: 3207 | 602s
+[Stage 2] Step  1376256 | Avg:   -36.32 | Best:   -35.67 | Loss: 0.0287 | LR: 2.59e-04 | Clip: 0.192 | Steps/s: 3218 | 616s
+[Stage 2] Step  1409024 | Avg:   -42.59 | Best:   -35.67 | Loss: 0.0323 | LR: 2.58e-04 | Clip: 0.192 | Steps/s: 3226 | 630s
+[Stage 2] Step  1441792 | Avg:   -39.27 | Best:   -35.67 | Loss: 0.0398 | LR: 2.57e-04 | Clip: 0.191 | Steps/s: 3228 | 644s
+[Stage 2] Step  1474560 | Avg:   -43.18 | Best:   -35.67 | Loss: 0.0517 | LR: 2.56e-04 | Clip: 0.191 | Steps/s: 3231 | 659s
+[Stage 2] Step  1507328 | Avg:   -40.30 | Best:   -35.67 | Loss: 0.0472 | LR: 2.55e-04 | Clip: 0.190 | Steps/s: 3233 | 673s
+[Stage 2] Step  1540096 | Avg:   -32.18 | Best:   -32.18 | Loss: 0.0335 | LR: 2.54e-04 | Clip: 0.189 | Steps/s: 3238 | 688s
+[Stage 2] Step  1572864 | Avg:   -27.87 | Best:   -27.87 | Loss: 0.0243 | LR: 2.53e-04 | Clip: 0.189 | Steps/s: 3228 | 702s
+[Stage 2] Step  1605632 | Avg:   -23.43 | Best:   -23.43 | Loss: 0.0284 | LR: 2.52e-04 | Clip: 0.188 | Steps/s: 3234 | 717s
+[Stage 2] Step  1638400 | Avg:   -14.93 | Best:   -14.93 | Loss: 0.0331 | LR: 2.51e-04 | Clip: 0.187 | Steps/s: 3224 | 731s
+[Stage 2] Step  1671168 | Avg:   -20.21 | Best:   -14.93 | Loss: 0.0279 | LR: 2.50e-04 | Clip: 0.187 | Steps/s: 3198 | 747s
+[Stage 2] Step  1703936 | Avg:   -22.96 | Best:   -14.93 | Loss: 0.0313 | LR: 2.49e-04 | Clip: 0.186 | Steps/s: 3186 | 762s
+[Stage 2] Step  1736704 | Avg:   -23.17 | Best:   -14.93 | Loss: 0.0209 | LR: 2.48e-04 | Clip: 0.185 | Steps/s: 3191 | 776s
+[Stage 2] Step  1769472 | Avg:   -31.03 | Best:   -14.93 | Loss: 0.0462 | LR: 2.47e-04 | Clip: 0.185 | Steps/s: 3192 | 791s
+[Stage 2] Step  1802240 | Avg:   -30.37 | Best:   -14.93 | Loss: 0.0316 | LR: 2.46e-04 | Clip: 0.184 | Steps/s: 3120 | 811s
+[Stage 2] Step  1835008 | Avg:   -34.97 | Best:   -14.93 | Loss: 0.0287 | LR: 2.45e-04 | Clip: 0.183 | Steps/s: 3073 | 828s
+[Stage 2] Step  1867776 | Avg:   -39.21 | Best:   -14.93 | Loss: 0.0533 | LR: 2.44e-04 | Clip: 0.183 | Steps/s: 3082 | 843s
+[Stage 2] Step  1900544 | Avg:   -45.02 | Best:   -14.93 | Loss: 0.0392 | LR: 2.43e-04 | Clip: 0.182 | Steps/s: 3100 | 859s
+[Stage 2] Step  1933312 | Avg:   -39.10 | Best:   -14.93 | Loss: 0.0406 | LR: 2.42e-04 | Clip: 0.181 | Steps/s: 3109 | 874s
+[Stage 2] Step  1966080 | Avg:   -37.44 | Best:   -14.93 | Loss: 0.0185 | LR: 2.41e-04 | Clip: 0.181 | Steps/s: 3118 | 888s
+[Stage 2] Step  1998848 | Avg:   -32.56 | Best:   -14.93 | Loss: 0.0130 | LR: 2.40e-04 | Clip: 0.180 | Steps/s: 3131 | 902s
+[Stage 2] Step  2031616 | Avg:   -35.39 | Best:   -14.93 | Loss: 0.0357 | LR: 2.39e-04 | Clip: 0.179 | Steps/s: 3146 | 917s
+[Stage 2] Step  2064384 | Avg:   -34.36 | Best:   -14.93 | Loss: 0.0352 | LR: 2.38e-04 | Clip: 0.179 | Steps/s: 3158 | 931s
+[Stage 2] Step  2097152 | Avg:   -33.37 | Best:   -14.93 | Loss: 0.0200 | LR: 2.37e-04 | Clip: 0.178 | Steps/s: 3165 | 946s
+[Stage 2] Step  2129920 | Avg:   -36.11 | Best:   -14.93 | Loss: 0.0254 | LR: 2.36e-04 | Clip: 0.177 | Steps/s: 3175 | 960s
+[Stage 2] Step  2162688 | Avg:   -27.13 | Best:   -14.93 | Loss: 0.0353 | LR: 2.35e-04 | Clip: 0.177 | Steps/s: 3186 | 974s
+[Stage 2] Step  2195456 | Avg:   -28.04 | Best:   -14.93 | Loss: 0.0406 | LR: 2.34e-04 | Clip: 0.176 | Steps/s: 3187 | 989s
+[Stage 2] Step  2228224 | Avg:   -26.20 | Best:   -14.93 | Loss: 0.0232 | LR: 2.33e-04 | Clip: 0.175 | Steps/s: 3179 | 1004s
+[Stage 2] Step  2260992 | Avg:   -21.25 | Best:   -14.93 | Loss: 0.0112 | LR: 2.32e-04 | Clip: 0.175 | Steps/s: 3189 | 1018s
+[Stage 2] Step  2293760 | Avg:   -27.30 | Best:   -14.93 | Loss: 0.0207 | LR: 2.31e-04 | Clip: 0.174 | Steps/s: 3202 | 1032s
+[Stage 2] Step  2326528 | Avg:   -26.98 | Best:   -14.93 | Loss: 0.0254 | LR: 2.30e-04 | Clip: 0.173 | Steps/s: 3213 | 1046s
+[Stage 2] Step  2359296 | Avg:   -22.81 | Best:   -14.93 | Loss: 0.0200 | LR: 2.29e-04 | Clip: 0.173 | Steps/s: 3212 | 1061s
+[Stage 2] Step  2392064 | Avg:   -25.88 | Best:   -14.93 | Loss: 0.0251 | LR: 2.28e-04 | Clip: 0.172 | Steps/s: 3218 | 1075s
+[Stage 2] Step  2424832 | Avg:   -28.78 | Best:   -14.93 | Loss: 0.0336 | LR: 2.27e-04 | Clip: 0.172 | Steps/s: 3195 | 1091s
+[Stage 2] Step  2457600 | Avg:   -27.23 | Best:   -14.93 | Loss: 0.0346 | LR: 2.26e-04 | Clip: 0.171 | Steps/s: 3205 | 1105s
+[Stage 2] Step  2490368 | Avg:   -29.37 | Best:   -14.93 | Loss: 0.0326 | LR: 2.25e-04 | Clip: 0.170 | Steps/s: 3214 | 1119s
+[Stage 2] Step  2523136 | Avg:   -28.49 | Best:   -14.93 | Loss: 0.0286 | LR: 2.24e-04 | Clip: 0.170 | Steps/s: 3222 | 1133s
+[Stage 2] Step  2555904 | Avg:   -20.57 | Best:   -14.93 | Loss: 0.0327 | LR: 2.23e-04 | Clip: 0.169 | Steps/s: 3225 | 1148s
+[Stage 2] Step  2588672 | Avg:   -22.88 | Best:   -14.93 | Loss: 0.0295 | LR: 2.22e-04 | Clip: 0.168 | Steps/s: 3221 | 1162s
+[Stage 2] Step  2621440 | Avg:   -20.74 | Best:   -14.93 | Loss: 0.0274 | LR: 2.21e-04 | Clip: 0.168 | Steps/s: 3214 | 1177s
+[Stage 2] Step  2654208 | Avg:   -25.76 | Best:   -14.93 | Loss: 0.0203 | LR: 2.20e-04 | Clip: 0.167 | Steps/s: 3217 | 1191s
+[Stage 2] Step  2686976 | Avg:   -32.42 | Best:   -14.93 | Loss: 0.0249 | LR: 2.19e-04 | Clip: 0.166 | Steps/s: 3223 | 1206s
+[Stage 2] Step  2719744 | Avg:   -32.70 | Best:   -14.93 | Loss: 0.0341 | LR: 2.18e-04 | Clip: 0.166 | Steps/s: 3236 | 1220s
+[Stage 2] Step  2752512 | Avg:   -24.85 | Best:   -14.93 | Loss: 0.0200 | LR: 2.17e-04 | Clip: 0.165 | Steps/s: 3242 | 1234s
+[Stage 2] Step  2785280 | Avg:   -24.96 | Best:   -14.93 | Loss: 0.0136 | LR: 2.16e-04 | Clip: 0.164 | Steps/s: 3245 | 1248s
+[Stage 2] Step  2818048 | Avg:   -17.42 | Best:   -14.93 | Loss: 0.0061 | LR: 2.15e-04 | Clip: 0.164 | Steps/s: 3249 | 1263s
+[Stage 2] Step  2850816 | Avg:   -13.59 | Best:   -13.59 | Loss: 0.0161 | LR: 2.14e-04 | Clip: 0.163 | Steps/s: 3255 | 1277s
+[Stage 2] Step  2883584 | Avg:   -10.78 | Best:   -10.78 | Loss: 0.0157 | LR: 2.13e-04 | Clip: 0.162 | Steps/s: 3251 | 1293s
+[Stage 2] Step  2916352 | Avg:   -14.68 | Best:   -10.78 | Loss: 0.0141 | LR: 2.13e-04 | Clip: 0.162 | Steps/s: 3237 | 1308s
+[Stage 2] Step  2949120 | Avg:   -17.18 | Best:   -10.78 | Loss: 0.0080 | LR: 2.12e-04 | Clip: 0.161 | Steps/s: 3237 | 1322s
+[Stage 2] Step  2981888 | Avg:   -22.34 | Best:   -10.78 | Loss: 0.0139 | LR: 2.11e-04 | Clip: 0.160 | Steps/s: 3243 | 1336s
+[Stage 2] Step  3014656 | Avg:   -26.84 | Best:   -10.78 | Loss: 0.0193 | LR: 2.10e-04 | Clip: 0.160 | Steps/s: 3246 | 1350s
+[Stage 2] Step  3047424 | Avg:   -20.54 | Best:   -10.78 | Loss: 0.0137 | LR: 2.09e-04 | Clip: 0.159 | Steps/s: 3260 | 1364s
+[Stage 2] Step  3080192 | Avg:   -25.66 | Best:   -10.78 | Loss: 0.0072 | LR: 2.08e-04 | Clip: 0.158 | Steps/s: 3260 | 1379s
+[Stage 2] Step  3112960 | Avg:   -20.91 | Best:   -10.78 | Loss: 0.0259 | LR: 2.07e-04 | Clip: 0.158 | Steps/s: 3259 | 1393s
+[Stage 2] Step  3145728 | Avg:   -20.15 | Best:   -10.78 | Loss: 0.0186 | LR: 2.06e-04 | Clip: 0.157 | Steps/s: 3262 | 1407s
+[Stage 2] Step  3178496 | Avg:   -17.05 | Best:   -10.78 | Loss: 0.0123 | LR: 2.05e-04 | Clip: 0.156 | Steps/s: 3255 | 1422s
+[Stage 2] Step  3211264 | Avg:   -17.66 | Best:   -10.78 | Loss: 0.0071 | LR: 2.04e-04 | Clip: 0.156 | Steps/s: 3258 | 1437s
+[Stage 2] Step  3244032 | Avg:   -16.75 | Best:   -10.78 | Loss: 0.0104 | LR: 2.03e-04 | Clip: 0.155 | Steps/s: 3256 | 1452s
+[Stage 2] Step  3276800 | Avg:   -18.32 | Best:   -10.78 | Loss: 0.0291 | LR: 2.02e-04 | Clip: 0.154 | Steps/s: 3259 | 1466s
+[Stage 2] Step  3309568 | Avg:   -12.34 | Best:   -10.78 | Loss: 0.0077 | LR: 2.01e-04 | Clip: 0.154 | Steps/s: 3256 | 1481s
+[Stage 2] Step  3342336 | Avg:   -19.40 | Best:   -10.78 | Loss: 0.0235 | LR: 2.00e-04 | Clip: 0.153 | Steps/s: 3258 | 1495s
+[Stage 2] Step  3375104 | Avg:   -14.76 | Best:   -10.78 | Loss: 0.0207 | LR: 1.99e-04 | Clip: 0.152 | Steps/s: 3259 | 1509s
+[Stage 2] Step  3407872 | Avg:   -17.57 | Best:   -10.78 | Loss: 0.0207 | LR: 1.98e-04 | Clip: 0.152 | Steps/s: 3264 | 1524s
+[Stage 2] Step  3440640 | Avg:   -17.99 | Best:   -10.78 | Loss: 0.0164 | LR: 1.97e-04 | Clip: 0.151 | Steps/s: 3259 | 1538s
+[Stage 2] Step  3473408 | Avg:   -19.66 | Best:   -10.78 | Loss: 0.0145 | LR: 1.96e-04 | Clip: 0.151 | Steps/s: 3262 | 1552s
+[Stage 2] Step  3506176 | Avg:   -18.66 | Best:   -10.78 | Loss: 0.0242 | LR: 1.95e-04 | Clip: 0.150 | Steps/s: 3228 | 1568s
+[Stage 2] Step  3538944 | Avg:   -17.68 | Best:   -10.78 | Loss: 0.0138 | LR: 1.94e-04 | Clip: 0.149 | Steps/s: 3238 | 1582s
+[Stage 2] Step  3571712 | Avg:   -24.54 | Best:   -10.78 | Loss: 0.0229 | LR: 1.93e-04 | Clip: 0.149 | Steps/s: 3243 | 1596s
+[Stage 2] Step  3604480 | Avg:   -26.25 | Best:   -10.78 | Loss: 0.0201 | LR: 1.92e-04 | Clip: 0.148 | Steps/s: 3239 | 1611s
+[Stage 2] Step  3637248 | Avg:   -27.79 | Best:   -10.78 | Loss: 0.0293 | LR: 1.91e-04 | Clip: 0.147 | Steps/s: 3248 | 1625s
+[Stage 2] Step  3670016 | Avg:   -25.25 | Best:   -10.78 | Loss: 0.0075 | LR: 1.90e-04 | Clip: 0.147 | Steps/s: 3248 | 1639s
+[Stage 2] Step  3702784 | Avg:   -21.52 | Best:   -10.78 | Loss: 0.0098 | LR: 1.89e-04 | Clip: 0.146 | Steps/s: 3242 | 1654s
+[Stage 2] Step  3735552 | Avg:   -18.22 | Best:   -10.78 | Loss: 0.0195 | LR: 1.88e-04 | Clip: 0.145 | Steps/s: 3242 | 1668s
+[Stage 2] Step  3768320 | Avg:   -15.13 | Best:   -10.78 | Loss: 0.0166 | LR: 1.87e-04 | Clip: 0.145 | Steps/s: 3241 | 1683s
+[Stage 2] Step  3801088 | Avg:   -19.40 | Best:   -10.78 | Loss: 0.0195 | LR: 1.86e-04 | Clip: 0.144 | Steps/s: 3244 | 1697s
+[Stage 2] Step  3833856 | Avg:   -24.72 | Best:   -10.78 | Loss: 0.0188 | LR: 1.85e-04 | Clip: 0.143 | Steps/s: 3246 | 1712s
+[Stage 2] Step  3866624 | Avg:   -16.81 | Best:   -10.78 | Loss: 0.0170 | LR: 1.84e-04 | Clip: 0.143 | Steps/s: 3247 | 1726s
+[Stage 2] Step  3899392 | Avg:   -14.76 | Best:   -10.78 | Loss: 0.0159 | LR: 1.83e-04 | Clip: 0.142 | Steps/s: 3250 | 1740s
+[Stage 2] Step  3932160 | Avg:   -24.06 | Best:   -10.78 | Loss: 0.0104 | LR: 1.82e-04 | Clip: 0.141 | Steps/s: 3254 | 1755s
+[Stage 2] Step  3964928 | Avg:   -19.11 | Best:   -10.78 | Loss: 0.0073 | LR: 1.81e-04 | Clip: 0.141 | Steps/s: 3255 | 1770s
+[Stage 2] Step  3997696 | Avg:   -15.82 | Best:   -10.78 | Loss: 0.0141 | LR: 1.80e-04 | Clip: 0.140 | Steps/s: 3200 | 1787s
+[Stage 2] Step  4030464 | Avg:   -15.37 | Best:   -10.78 | Loss: 0.0074 | LR: 1.79e-04 | Clip: 0.139 | Steps/s: 3146 | 1805s
+[Stage 2] Step  4063232 | Avg:   -17.18 | Best:   -10.78 | Loss: 0.0148 | LR: 1.78e-04 | Clip: 0.139 | Steps/s: 3154 | 1820s
+[Stage 2] Step  4096000 | Avg:   -14.30 | Best:   -10.78 | Loss: 0.0146 | LR: 1.77e-04 | Clip: 0.138 | Steps/s: 3156 | 1834s
+[Stage 2] Step  4128768 | Avg:   -17.12 | Best:   -10.78 | Loss: 0.0108 | LR: 1.76e-04 | Clip: 0.137 | Steps/s: 3165 | 1849s
+[Stage 2] Step  4161536 | Avg:   -23.81 | Best:   -10.78 | Loss: 0.0212 | LR: 1.75e-04 | Clip: 0.137 | Steps/s: 3068 | 1868s
+[Stage 2] Step  4194304 | Avg:   -13.70 | Best:   -10.78 | Loss: 0.0294 | LR: 1.74e-04 | Clip: 0.136 | Steps/s: 3078 | 1883s
+[Stage 2] Step  4227072 | Avg:   -15.88 | Best:   -10.78 | Loss: 0.0223 | LR: 1.73e-04 | Clip: 0.135 | Steps/s: 3077 | 1898s
+[Stage 2] Step  4259840 | Avg:   -11.37 | Best:   -10.78 | Loss: 0.0183 | LR: 1.72e-04 | Clip: 0.135 | Steps/s: 3063 | 1914s
+[Stage 2] Step  4292608 | Avg:    -6.44 | Best:    -6.44 | Loss: 0.0197 | LR: 1.71e-04 | Clip: 0.134 | Steps/s: 3071 | 1929s
+[Stage 2] Step  4325376 | Avg:   -11.61 | Best:    -6.44 | Loss: 0.0165 | LR: 1.70e-04 | Clip: 0.133 | Steps/s: 3090 | 1943s
+[Stage 2] Step  4358144 | Avg:   -13.72 | Best:    -6.44 | Loss: 0.0184 | LR: 1.69e-04 | Clip: 0.133 | Steps/s: 3106 | 1957s
+[Stage 2] Step  4390912 | Avg:   -16.62 | Best:    -6.44 | Loss: 0.0126 | LR: 1.68e-04 | Clip: 0.132 | Steps/s: 3105 | 1972s
+[Stage 2] Step  4423680 | Avg:   -20.02 | Best:    -6.44 | Loss: 0.0202 | LR: 1.67e-04 | Clip: 0.132 | Steps/s: 3115 | 1987s
+[Stage 2] Step  4456448 | Avg:   -15.92 | Best:    -6.44 | Loss: 0.0171 | LR: 1.66e-04 | Clip: 0.131 | Steps/s: 3123 | 2002s
+[Stage 2] Step  4489216 | Avg:   -12.84 | Best:    -6.44 | Loss: 0.0258 | LR: 1.65e-04 | Clip: 0.130 | Steps/s: 3046 | 2020s
+[Stage 2] Step  4521984 | Avg:    -7.46 | Best:    -6.44 | Loss: 0.0135 | LR: 1.64e-04 | Clip: 0.130 | Steps/s: 3065 | 2034s
+[Stage 2] Step  4554752 | Avg:   -12.34 | Best:    -6.44 | Loss: 0.0157 | LR: 1.63e-04 | Clip: 0.129 | Steps/s: 3088 | 2049s
+[Stage 2] Step  4587520 | Avg:   -12.61 | Best:    -6.44 | Loss: 0.0249 | LR: 1.62e-04 | Clip: 0.128 | Steps/s: 3114 | 2063s
+[Stage 2] Step  4620288 | Avg:    -4.17 | Best:    -4.17 | Loss: 0.0159 | LR: 1.61e-04 | Clip: 0.128 | Steps/s: 3131 | 2077s
+[Stage 2] Step  4653056 | Avg:   -10.67 | Best:    -4.17 | Loss: 0.0038 | LR: 1.60e-04 | Clip: 0.127 | Steps/s: 3144 | 2091s
+[Stage 2] Step  4685824 | Avg:    -8.66 | Best:    -4.17 | Loss: 0.0015 | LR: 1.59e-04 | Clip: 0.126 | Steps/s: 3158 | 2106s
+[Stage 2] Step  4718592 | Avg:   -14.88 | Best:    -4.17 | Loss: 0.0293 | LR: 1.58e-04 | Clip: 0.126 | Steps/s: 3172 | 2120s
+[Stage 2] Step  4751360 | Avg:   -10.89 | Best:    -4.17 | Loss: 0.0171 | LR: 1.57e-04 | Clip: 0.125 | Steps/s: 3154 | 2136s
+[Stage 2] Step  4784128 | Avg:   -14.55 | Best:    -4.17 | Loss: 0.0137 | LR: 1.56e-04 | Clip: 0.124 | Steps/s: 3168 | 2150s
+[Stage 2] Step  4816896 | Avg:   -14.53 | Best:    -4.17 | Loss: 0.0074 | LR: 1.55e-04 | Clip: 0.124 | Steps/s: 3169 | 2165s
+[Stage 2] Step  4849664 | Avg:   -11.18 | Best:    -4.17 | Loss: 0.0297 | LR: 1.55e-04 | Clip: 0.123 | Steps/s: 3186 | 2179s
+[Stage 2] Step  4882432 | Avg:    -4.05 | Best:    -4.05 | Loss: 0.0087 | LR: 1.54e-04 | Clip: 0.122 | Steps/s: 3199 | 2193s
+[Stage 2] Step  4915200 | Avg:   -13.51 | Best:    -4.05 | Loss: 0.0219 | LR: 1.53e-04 | Clip: 0.122 | Steps/s: 3198 | 2208s
+[Stage 2] Step  4947968 | Avg:   -15.63 | Best:    -4.05 | Loss: 0.0256 | LR: 1.52e-04 | Clip: 0.121 | Steps/s: 3208 | 2222s
+[Stage 2] Step  4980736 | Avg:   -12.11 | Best:    -4.05 | Loss: 0.0289 | LR: 1.51e-04 | Clip: 0.120 | Steps/s: 3217 | 2236s
+[Stage 2] Step  5013504 | Avg:   -15.01 | Best:    -4.05 | Loss: 0.0085 | LR: 1.50e-04 | Clip: 0.120 | Steps/s: 3225 | 2250s
+[Stage 2] Step  5046272 | Avg:   -13.37 | Best:    -4.05 | Loss: 0.0110 | LR: 1.49e-04 | Clip: 0.119 | Steps/s: 3226 | 2265s
+[Stage 2] Step  5079040 | Avg:    -8.57 | Best:    -4.05 | Loss: 0.0055 | LR: 1.48e-04 | Clip: 0.118 | Steps/s: 3236 | 2279s
+[Stage 2] Step  5111808 | Avg:   -11.05 | Best:    -4.05 | Loss: 0.0112 | LR: 1.47e-04 | Clip: 0.118 | Steps/s: 3243 | 2293s
+[Stage 2] Step  5144576 | Avg:   -13.35 | Best:    -4.05 | Loss: 0.0147 | LR: 1.46e-04 | Clip: 0.117 | Steps/s: 3227 | 2308s
+[Stage 2] Step  5177344 | Avg:   -13.84 | Best:    -4.05 | Loss: 0.0166 | LR: 1.45e-04 | Clip: 0.116 | Steps/s: 3230 | 2323s
+[Stage 2] Step  5210112 | Avg:    -8.77 | Best:    -4.05 | Loss: 0.0081 | LR: 1.44e-04 | Clip: 0.116 | Steps/s: 3235 | 2337s
+[Stage 2] Step  5242880 | Avg:    -3.93 | Best:    -3.93 | Loss: 0.0176 | LR: 1.43e-04 | Clip: 0.115 | Steps/s: 3227 | 2352s
+[Stage 2] Step  5275648 | Avg:    -1.05 | Best:    -1.05 | Loss: 0.0086 | LR: 1.42e-04 | Clip: 0.114 | Steps/s: 3214 | 2367s
+[Stage 2] Step  5308416 | Avg:    -7.52 | Best:    -1.05 | Loss: 0.0292 | LR: 1.41e-04 | Clip: 0.114 | Steps/s: 3199 | 2382s
+[Stage 2] Step  5341184 | Avg:    -5.18 | Best:    -1.05 | Loss: 0.0112 | LR: 1.40e-04 | Clip: 0.113 | Steps/s: 3192 | 2397s
+[Stage 2] Step  5373952 | Avg:   -15.29 | Best:    -1.05 | Loss: 0.0142 | LR: 1.39e-04 | Clip: 0.113 | Steps/s: 3202 | 2412s
+[Stage 2] Step  5406720 | Avg:    -9.89 | Best:    -1.05 | Loss: 0.0119 | LR: 1.38e-04 | Clip: 0.112 | Steps/s: 3213 | 2427s
+[Stage 2] Step  5439488 | Avg:    -4.78 | Best:    -1.05 | Loss: 0.0190 | LR: 1.37e-04 | Clip: 0.111 | Steps/s: 3204 | 2443s
+[Stage 2] Step  5472256 | Avg:    -8.41 | Best:    -1.05 | Loss: 0.0183 | LR: 1.36e-04 | Clip: 0.111 | Steps/s: 3200 | 2457s
+[Stage 2] Step  5505024 | Avg:   -11.19 | Best:    -1.05 | Loss: 0.0225 | LR: 1.35e-04 | Clip: 0.110 | Steps/s: 3197 | 2472s
+[Stage 2] Step  5537792 | Avg:   -12.63 | Best:    -1.05 | Loss: 0.0191 | LR: 1.34e-04 | Clip: 0.109 | Steps/s: 3206 | 2487s
+[Stage 2] Step  5570560 | Avg:   -21.85 | Best:    -1.05 | Loss: 0.0230 | LR: 1.33e-04 | Clip: 0.109 | Steps/s: 3209 | 2501s
+[Stage 2] Step  5603328 | Avg:   -24.20 | Best:    -1.05 | Loss: 0.0356 | LR: 1.32e-04 | Clip: 0.108 | Steps/s: 3218 | 2516s
+[Stage 2] Step  5636096 | Avg:   -18.02 | Best:    -1.05 | Loss: 0.0127 | LR: 1.31e-04 | Clip: 0.107 | Steps/s: 3194 | 2532s
+[Stage 2] Step  5668864 | Avg:   -15.85 | Best:    -1.05 | Loss: 0.0188 | LR: 1.30e-04 | Clip: 0.107 | Steps/s: 3183 | 2547s
+[Stage 2] Step  5701632 | Avg:   -12.74 | Best:    -1.05 | Loss: 0.0135 | LR: 1.29e-04 | Clip: 0.106 | Steps/s: 3160 | 2564s
+[Stage 2] Step  5734400 | Avg:    -7.68 | Best:    -1.05 | Loss: 0.0204 | LR: 1.28e-04 | Clip: 0.105 | Steps/s: 3140 | 2580s
+[Stage 2] Step  5767168 | Avg:    -4.18 | Best:    -1.05 | Loss: 0.0171 | LR: 1.27e-04 | Clip: 0.105 | Steps/s: 3123 | 2596s
+[Stage 2] Step  5799936 | Avg:    -5.53 | Best:    -1.05 | Loss: 0.0173 | LR: 1.26e-04 | Clip: 0.104 | Steps/s: 3139 | 2610s
+[Stage 2] Step  5832704 | Avg:    -8.59 | Best:    -1.05 | Loss: 0.0209 | LR: 1.25e-04 | Clip: 0.103 | Steps/s: 3146 | 2624s
+[Stage 2] Step  5865472 | Avg:    -7.87 | Best:    -1.05 | Loss: 0.0198 | LR: 1.24e-04 | Clip: 0.103 | Steps/s: 3168 | 2638s
+[Stage 2] Step  5898240 | Avg:    -8.95 | Best:    -1.05 | Loss: 0.0046 | LR: 1.23e-04 | Clip: 0.102 | Steps/s: 3172 | 2653s
+[Stage 2] Step  5931008 | Avg:   -10.69 | Best:    -1.05 | Loss: 0.0070 | LR: 1.22e-04 | Clip: 0.101 | Steps/s: 3181 | 2667s
+[Stage 2] Step  5963776 | Avg:   -10.79 | Best:    -1.05 | Loss: 0.0095 | LR: 1.21e-04 | Clip: 0.101 | Steps/s: 3187 | 2682s
+[Stage 2] Step  5996544 | Avg:   -12.12 | Best:    -1.05 | Loss: 0.0064 | LR: 1.20e-04 | Clip: 0.100 | Steps/s: 3195 | 2696s
+[Stage 2] Step  6029312 | Avg:    -6.28 | Best:    -1.05 | Loss: -0.0034 | LR: 1.19e-04 | Clip: 0.099 | Steps/s: 3201 | 2711s
+[Stage 2] Step  6062080 | Avg:    -1.61 | Best:    -1.05 | Loss: 0.0186 | LR: 1.18e-04 | Clip: 0.099 | Steps/s: 3192 | 2726s
+[Stage 2] Step  6094848 | Avg:     2.63 | Best:     2.63 | Loss: 0.0282 | LR: 1.17e-04 | Clip: 0.098 | Steps/s: 3189 | 2740s
+[Stage 2] Step  6127616 | Avg:     7.08 | Best:     7.08 | Loss: 0.0351 | LR: 1.16e-04 | Clip: 0.097 | Steps/s: 3198 | 2755s
+[Stage 2] Step  6160384 | Avg:     4.63 | Best:     7.08 | Loss: 0.0169 | LR: 1.15e-04 | Clip: 0.097 | Steps/s: 3193 | 2770s
+[Stage 2] Step  6193152 | Avg:     5.92 | Best:     7.08 | Loss: 0.0178 | LR: 1.14e-04 | Clip: 0.096 | Steps/s: 3169 | 2785s
+[Stage 2] Step  6225920 | Avg:     8.45 | Best:     8.45 | Loss: 0.0113 | LR: 1.13e-04 | Clip: 0.095 | Steps/s: 3174 | 2800s
+[Stage 2] Step  6258688 | Avg:    12.29 | Best:    12.29 | Loss: 0.0016 | LR: 1.12e-04 | Clip: 0.095 | Steps/s: 3179 | 2814s
+[Stage 2] Step  6291456 | Avg:    10.87 | Best:    12.29 | Loss: 0.0085 | LR: 1.11e-04 | Clip: 0.094 | Steps/s: 3190 | 2828s
+[Stage 2] Step  6324224 | Avg:     9.95 | Best:    12.29 | Loss: 0.0142 | LR: 1.10e-04 | Clip: 0.094 | Steps/s: 3195 | 2843s
+[Stage 2] Step  6356992 | Avg:     5.94 | Best:    12.29 | Loss: 0.0290 | LR: 1.09e-04 | Clip: 0.093 | Steps/s: 3192 | 2858s
+[Stage 2] Step  6389760 | Avg:     1.74 | Best:    12.29 | Loss: 0.0290 | LR: 1.08e-04 | Clip: 0.092 | Steps/s: 3192 | 2872s
+[Stage 2] Step  6422528 | Avg:     5.11 | Best:    12.29 | Loss: 0.0056 | LR: 1.07e-04 | Clip: 0.092 | Steps/s: 3196 | 2887s
+[Stage 2] Step  6455296 | Avg:    -7.16 | Best:    12.29 | Loss: 0.0152 | LR: 1.06e-04 | Clip: 0.091 | Steps/s: 3204 | 2901s
+[Stage 2] Step  6488064 | Avg:    -4.64 | Best:    12.29 | Loss: 0.0249 | LR: 1.05e-04 | Clip: 0.090 | Steps/s: 3137 | 2919s
+[Stage 2] Step  6520832 | Avg:    -9.81 | Best:    12.29 | Loss: 0.0198 | LR: 1.04e-04 | Clip: 0.090 | Steps/s: 3152 | 2933s
+[Stage 2] Step  6553600 | Avg:    -6.91 | Best:    12.29 | Loss: 0.0181 | LR: 1.03e-04 | Clip: 0.089 | Steps/s: 3144 | 2949s
+[Stage 2] Step  6586368 | Avg:    -4.94 | Best:    12.29 | Loss: 0.0119 | LR: 1.02e-04 | Clip: 0.088 | Steps/s: 3162 | 2963s
+[Stage 2] Step  6619136 | Avg:     3.79 | Best:    12.29 | Loss: 0.0100 | LR: 1.01e-04 | Clip: 0.088 | Steps/s: 3164 | 2978s
+[Stage 2] Step  6651904 | Avg:    -6.13 | Best:    12.29 | Loss: 0.0154 | LR: 1.00e-04 | Clip: 0.087 | Steps/s: 3168 | 2993s
+[Stage 2] Step  6684672 | Avg:    -0.45 | Best:    12.29 | Loss: 0.0186 | LR: 9.95e-05 | Clip: 0.086 | Steps/s: 3115 | 3013s
+[Stage 2] Step  6717440 | Avg:    -6.60 | Best:    12.29 | Loss: 0.0149 | LR: 9.85e-05 | Clip: 0.086 | Steps/s: 3013 | 3034s
+[Stage 2] Step  6750208 | Avg:   -11.07 | Best:    12.29 | Loss: 0.0139 | LR: 9.75e-05 | Clip: 0.085 | Steps/s: 3003 | 3049s
+[Stage 2] Step  6782976 | Avg:   -11.20 | Best:    12.29 | Loss: 0.0133 | LR: 9.65e-05 | Clip: 0.084 | Steps/s: 2992 | 3065s
+[Stage 2] Step  6815744 | Avg:   -12.34 | Best:    12.29 | Loss: 0.0177 | LR: 9.55e-05 | Clip: 0.084 | Steps/s: 3019 | 3080s
+[Stage 2] Step  6848512 | Avg:    -8.44 | Best:    12.29 | Loss: 0.0070 | LR: 9.45e-05 | Clip: 0.083 | Steps/s: 3017 | 3096s
+[Stage 2] Step  6881280 | Avg:    -6.43 | Best:    12.29 | Loss: 0.0265 | LR: 9.36e-05 | Clip: 0.082 | Steps/s: 3032 | 3111s
+[Stage 2] Step  6914048 | Avg:   -10.68 | Best:    12.29 | Loss: 0.0351 | LR: 9.26e-05 | Clip: 0.082 | Steps/s: 3036 | 3126s
+[Stage 2] Step  6946816 | Avg:    -4.10 | Best:    12.29 | Loss: 0.0228 | LR: 9.16e-05 | Clip: 0.081 | Steps/s: 3045 | 3141s
+[Stage 2] Step  6979584 | Avg:   -10.81 | Best:    12.29 | Loss: 0.0180 | LR: 9.06e-05 | Clip: 0.080 | Steps/s: 3057 | 3156s
+[Stage 2] Step  7012352 | Avg:   -14.19 | Best:    12.29 | Loss: 0.0129 | LR: 8.96e-05 | Clip: 0.080 | Steps/s: 3083 | 3170s
+[Stage 2] Step  7045120 | Avg:    -8.41 | Best:    12.29 | Loss: 0.0065 | LR: 8.86e-05 | Clip: 0.079 | Steps/s: 3008 | 3189s
+[Stage 2] Step  7077888 | Avg:     2.32 | Best:    12.29 | Loss: 0.0107 | LR: 8.77e-05 | Clip: 0.078 | Steps/s: 3024 | 3204s
+[Stage 2] Step  7110656 | Avg:    -2.82 | Best:    12.29 | Loss: 0.0079 | LR: 8.67e-05 | Clip: 0.078 | Steps/s: 3038 | 3218s
+[Stage 2] Step  7143424 | Avg:    -3.97 | Best:    12.29 | Loss: 0.0186 | LR: 8.57e-05 | Clip: 0.077 | Steps/s: 3062 | 3232s
+[Stage 2] Step  7176192 | Avg:     0.17 | Best:    12.29 | Loss: 0.0106 | LR: 8.47e-05 | Clip: 0.076 | Steps/s: 3044 | 3251s
+[Stage 2] Step  7208960 | Avg:    -3.16 | Best:    12.29 | Loss: 0.0092 | LR: 8.37e-05 | Clip: 0.076 | Steps/s: 3056 | 3266s
+[Stage 2] Step  7241728 | Avg:     2.57 | Best:    12.29 | Loss: 0.0108 | LR: 8.27e-05 | Clip: 0.075 | Steps/s: 3029 | 3282s
+[Stage 2] Step  7274496 | Avg:    -0.20 | Best:    12.29 | Loss: 0.0129 | LR: 8.18e-05 | Clip: 0.075 | Steps/s: 3053 | 3296s
+[Stage 2] Step  7307264 | Avg:     7.55 | Best:    12.29 | Loss: 0.0101 | LR: 8.08e-05 | Clip: 0.074 | Steps/s: 3028 | 3313s
+[Stage 2] Step  7340032 | Avg:     1.14 | Best:    12.29 | Loss: 0.0041 | LR: 7.98e-05 | Clip: 0.073 | Steps/s: 3017 | 3330s
+[Stage 2] Step  7372800 | Avg:    -0.15 | Best:    12.29 | Loss: 0.0183 | LR: 7.88e-05 | Clip: 0.073 | Steps/s: 3001 | 3346s
+[Stage 2] Step  7405568 | Avg:    -4.17 | Best:    12.29 | Loss: 0.0317 | LR: 7.78e-05 | Clip: 0.072 | Steps/s: 2993 | 3363s
+[Stage 2] Step  7438336 | Avg:    -1.11 | Best:    12.29 | Loss: 0.0165 | LR: 7.68e-05 | Clip: 0.071 | Steps/s: 3012 | 3378s
+[Stage 2] Step  7471104 | Avg:    -3.91 | Best:    12.29 | Loss: 0.0252 | LR: 7.59e-05 | Clip: 0.071 | Steps/s: 3007 | 3393s
+[Stage 2] Step  7503872 | Avg:    -9.81 | Best:    12.29 | Loss: 0.0218 | LR: 7.49e-05 | Clip: 0.070 | Steps/s: 3028 | 3408s
+[Stage 2] Step  7536640 | Avg:    -4.38 | Best:    12.29 | Loss: 0.0164 | LR: 7.39e-05 | Clip: 0.069 | Steps/s: 3038 | 3422s
+[Stage 2] Step  7569408 | Avg:    -7.06 | Best:    12.29 | Loss: 0.0368 | LR: 7.29e-05 | Clip: 0.069 | Steps/s: 3070 | 3437s
+[Stage 2] Step  7602176 | Avg:    -1.23 | Best:    12.29 | Loss: 0.0218 | LR: 7.19e-05 | Clip: 0.068 | Steps/s: 3049 | 3453s
+[Stage 2] Step  7634944 | Avg:    -1.85 | Best:    12.29 | Loss: 0.0337 | LR: 7.10e-05 | Clip: 0.067 | Steps/s: 3029 | 3469s
+[Stage 2] Step  7667712 | Avg:    -2.18 | Best:    12.29 | Loss: 0.0126 | LR: 7.00e-05 | Clip: 0.067 | Steps/s: 2985 | 3487s
+[Stage 2] Step  7700480 | Avg:    -1.31 | Best:    12.29 | Loss: 0.0259 | LR: 6.90e-05 | Clip: 0.066 | Steps/s: 2977 | 3503s
+[Stage 2] Step  7733248 | Avg:    -4.85 | Best:    12.29 | Loss: 0.0196 | LR: 6.80e-05 | Clip: 0.065 | Steps/s: 2975 | 3518s
+[Stage 2] Step  7766016 | Avg:    -4.34 | Best:    12.29 | Loss: 0.0293 | LR: 6.70e-05 | Clip: 0.065 | Steps/s: 2998 | 3533s
+[Stage 2] Step  7798784 | Avg:    -2.18 | Best:    12.29 | Loss: 0.0086 | LR: 6.60e-05 | Clip: 0.064 | Steps/s: 2954 | 3553s
+[Stage 2] Step  7831552 | Avg:    -8.22 | Best:    12.29 | Loss: 0.0208 | LR: 6.51e-05 | Clip: 0.063 | Steps/s: 2988 | 3567s
+[Stage 2] Step  7864320 | Avg:    -7.51 | Best:    12.29 | Loss: 0.0278 | LR: 6.41e-05 | Clip: 0.063 | Steps/s: 2988 | 3582s
+[Stage 2] Step  7897088 | Avg:     4.72 | Best:    12.29 | Loss: 0.0135 | LR: 6.31e-05 | Clip: 0.062 | Steps/s: 3010 | 3597s
+[Stage 2] Step  7929856 | Avg:     5.50 | Best:    12.29 | Loss: 0.0096 | LR: 6.21e-05 | Clip: 0.061 | Steps/s: 3014 | 3612s
+[Stage 2] Step  7962624 | Avg:     4.22 | Best:    12.29 | Loss: 0.0130 | LR: 6.11e-05 | Clip: 0.061 | Steps/s: 3018 | 3628s
+[Stage 2] Step  7995392 | Avg:    14.98 | Best:    14.98 | Loss: 0.0138 | LR: 6.01e-05 | Clip: 0.060 | Steps/s: 2998 | 3644s
+[Stage 2] Step  8028160 | Avg:    19.94 | Best:    19.94 | Loss: 0.0098 | LR: 5.92e-05 | Clip: 0.059 | Steps/s: 3007 | 3660s
+[Stage 2] Step  8060928 | Avg:    10.11 | Best:    19.94 | Loss: 0.0186 | LR: 5.82e-05 | Clip: 0.059 | Steps/s: 3033 | 3674s
+[Stage 2] Step  8093696 | Avg:     8.77 | Best:    19.94 | Loss: 0.0197 | LR: 5.72e-05 | Clip: 0.058 | Steps/s: 3021 | 3691s
+[Stage 2] Step  8126464 | Avg:     3.10 | Best:    19.94 | Loss: 0.0272 | LR: 5.62e-05 | Clip: 0.057 | Steps/s: 2997 | 3707s
+[Stage 2] Step  8159232 | Avg:     3.82 | Best:    19.94 | Loss: 0.0202 | LR: 5.52e-05 | Clip: 0.057 | Steps/s: 2999 | 3722s
+[Stage 2] Step  8192000 | Avg:     5.43 | Best:    19.94 | Loss: 0.0089 | LR: 5.42e-05 | Clip: 0.056 | Steps/s: 3003 | 3737s
+[Stage 2] Step  8224768 | Avg:     2.80 | Best:    19.94 | Loss: 0.0257 | LR: 5.33e-05 | Clip: 0.056 | Steps/s: 3045 | 3752s
+[Stage 2] Step  8257536 | Avg:    10.74 | Best:    19.94 | Loss: 0.0184 | LR: 5.23e-05 | Clip: 0.055 | Steps/s: 3019 | 3768s
+[Stage 2] Step  8290304 | Avg:     2.30 | Best:    19.94 | Loss: 0.0471 | LR: 5.13e-05 | Clip: 0.054 | Steps/s: 3027 | 3783s
+[Stage 2] Step  8323072 | Avg:   -15.39 | Best:    19.94 | Loss: 0.0462 | LR: 5.03e-05 | Clip: 0.054 | Steps/s: 3057 | 3797s
+[Stage 2] Step  8355840 | Avg:   -13.80 | Best:    19.94 | Loss: 0.0303 | LR: 4.93e-05 | Clip: 0.053 | Steps/s: 3060 | 3812s
+[Stage 2] Step  8388608 | Avg:   -10.01 | Best:    19.94 | Loss: 0.0120 | LR: 4.83e-05 | Clip: 0.052 | Steps/s: 3059 | 3827s
+[Stage 2] Step  8421376 | Avg:    -8.04 | Best:    19.94 | Loss: 0.0005 | LR: 4.74e-05 | Clip: 0.052 | Steps/s: 3056 | 3842s
+[Stage 2] Step  8454144 | Avg:    -1.05 | Best:    19.94 | Loss: 0.0210 | LR: 4.64e-05 | Clip: 0.051 | Steps/s: 3065 | 3857s
+[Stage 2] Step  8486912 | Avg:     3.74 | Best:    19.94 | Loss: 0.0249 | LR: 4.54e-05 | Clip: 0.050 | Steps/s: 3084 | 3871s
+[Stage 2] Step  8519680 | Avg:     4.11 | Best:    19.94 | Loss: 0.0229 | LR: 4.44e-05 | Clip: 0.050 | Steps/s: 3042 | 3888s
+[Stage 2] Step  8552448 | Avg:   -13.77 | Best:    19.94 | Loss: 0.0286 | LR: 4.34e-05 | Clip: 0.049 | Steps/s: 3059 | 3903s
+[Stage 2] Step  8585216 | Avg:   -13.78 | Best:    19.94 | Loss: 0.0409 | LR: 4.24e-05 | Clip: 0.048 | Steps/s: 3081 | 3917s
+[Stage 2] Step  8617984 | Avg:    -7.95 | Best:    19.94 | Loss: 0.0244 | LR: 4.15e-05 | Clip: 0.048 | Steps/s: 3037 | 3934s
+[Stage 2] Step  8650752 | Avg:    -6.33 | Best:    19.94 | Loss: 0.0249 | LR: 4.05e-05 | Clip: 0.047 | Steps/s: 3039 | 3949s
+[Stage 2] Step  8683520 | Avg:    -0.21 | Best:    19.94 | Loss: 0.0383 | LR: 3.95e-05 | Clip: 0.046 | Steps/s: 3052 | 3964s
+[Stage 2] Step  8716288 | Avg:    -2.83 | Best:    19.94 | Loss: 0.0278 | LR: 3.85e-05 | Clip: 0.046 | Steps/s: 3079 | 3978s
+[Stage 2] Step  8749056 | Avg:     3.55 | Best:    19.94 | Loss: 0.0293 | LR: 3.75e-05 | Clip: 0.045 | Steps/s: 3105 | 3994s
+[Stage 2] Step  8781824 | Avg:    -4.66 | Best:    19.94 | Loss: 0.0153 | LR: 3.65e-05 | Clip: 0.044 | Steps/s: 3111 | 4009s
+[Stage 2] Step  8814592 | Avg:    -2.20 | Best:    19.94 | Loss: 0.0355 | LR: 3.56e-05 | Clip: 0.044 | Steps/s: 3123 | 4024s
+[Stage 2] Step  8847360 | Avg:     1.50 | Best:    19.94 | Loss: 0.0128 | LR: 3.46e-05 | Clip: 0.043 | Steps/s: 3139 | 4038s
+[Stage 2] Step  8880128 | Avg:   -10.81 | Best:    19.94 | Loss: 0.0235 | LR: 3.36e-05 | Clip: 0.042 | Steps/s: 3152 | 4052s
+[Stage 2] Step  8912896 | Avg:   -10.08 | Best:    19.94 | Loss: 0.0227 | LR: 3.26e-05 | Clip: 0.042 | Steps/s: 3160 | 4068s
+[Stage 2] Step  8945664 | Avg:    -0.88 | Best:    19.94 | Loss: 0.0283 | LR: 3.16e-05 | Clip: 0.041 | Steps/s: 3168 | 4083s
+[Stage 2] Step  8978432 | Avg:    -9.16 | Best:    19.94 | Loss: 0.0247 | LR: 3.06e-05 | Clip: 0.040 | Steps/s: 3164 | 4098s
+[Stage 2] Step  9011200 | Avg:    -8.43 | Best:    19.94 | Loss: 0.0203 | LR: 2.97e-05 | Clip: 0.040 | Steps/s: 3175 | 4112s
+[Stage 2] Step  9043968 | Avg:    -5.90 | Best:    19.94 | Loss: 0.0222 | LR: 2.87e-05 | Clip: 0.039 | Steps/s: 3169 | 4127s
+[Stage 2] Step  9076736 | Avg:    -7.94 | Best:    19.94 | Loss: 0.0271 | LR: 2.77e-05 | Clip: 0.038 | Steps/s: 3180 | 4141s
+[Stage 2] Step  9109504 | Avg:    -7.87 | Best:    19.94 | Loss: 0.0260 | LR: 2.67e-05 | Clip: 0.038 | Steps/s: 3187 | 4156s
+[Stage 2] Step  9142272 | Avg:    -5.11 | Best:    19.94 | Loss: 0.0271 | LR: 2.57e-05 | Clip: 0.037 | Steps/s: 3198 | 4170s
+[Stage 2] Step  9175040 | Avg:    -1.34 | Best:    19.94 | Loss: 0.0301 | LR: 2.47e-05 | Clip: 0.036 | Steps/s: 3195 | 4185s
+[Stage 2] Step  9207808 | Avg:     5.84 | Best:    19.94 | Loss: 0.0152 | LR: 2.38e-05 | Clip: 0.036 | Steps/s: 3210 | 4199s
+[Stage 2] Step  9240576 | Avg:     6.93 | Best:    19.94 | Loss: 0.0207 | LR: 2.28e-05 | Clip: 0.035 | Steps/s: 3218 | 4213s
+[Stage 2] Step  9273344 | Avg:     1.19 | Best:    19.94 | Loss: 0.0208 | LR: 2.18e-05 | Clip: 0.035 | Steps/s: 3224 | 4228s
+[Stage 2] Step  9306112 | Avg:     4.00 | Best:    19.94 | Loss: 0.0285 | LR: 2.08e-05 | Clip: 0.034 | Steps/s: 3206 | 4243s
+[Stage 2] Step  9338880 | Avg:     3.72 | Best:    19.94 | Loss: 0.0136 | LR: 1.98e-05 | Clip: 0.033 | Steps/s: 3216 | 4259s
+[Stage 2] Step  9371648 | Avg:    -0.61 | Best:    19.94 | Loss: 0.0330 | LR: 1.89e-05 | Clip: 0.033 | Steps/s: 3201 | 4274s
+[Stage 2] Step  9404416 | Avg:     7.12 | Best:    19.94 | Loss: 0.0206 | LR: 1.79e-05 | Clip: 0.032 | Steps/s: 3187 | 4289s
+[Stage 2] Step  9437184 | Avg:    18.28 | Best:    19.94 | Loss: 0.0233 | LR: 1.69e-05 | Clip: 0.031 | Steps/s: 3160 | 4307s
+[Stage 2] Step  9469952 | Avg:    15.67 | Best:    19.94 | Loss: 0.0226 | LR: 1.59e-05 | Clip: 0.031 | Steps/s: 3154 | 4322s
+[Stage 2] Step  9502720 | Avg:     8.50 | Best:    19.94 | Loss: 0.0407 | LR: 1.49e-05 | Clip: 0.030 | Steps/s: 3152 | 4338s
+[Stage 2] Step  9535488 | Avg:     4.13 | Best:    19.94 | Loss: 0.0185 | LR: 1.39e-05 | Clip: 0.029 | Steps/s: 3155 | 4353s
+[Stage 2] Step  9568256 | Avg:     7.54 | Best:    19.94 | Loss: 0.0287 | LR: 1.30e-05 | Clip: 0.029 | Steps/s: 3164 | 4367s
+[Stage 2] Step  9601024 | Avg:     4.55 | Best:    19.94 | Loss: 0.0322 | LR: 1.20e-05 | Clip: 0.028 | Steps/s: 3192 | 4381s
+[Stage 2] Step  9633792 | Avg:    12.84 | Best:    19.94 | Loss: 0.0290 | LR: 1.10e-05 | Clip: 0.027 | Steps/s: 3204 | 4395s
+[Stage 2] Step  9666560 | Avg:    19.44 | Best:    19.94 | Loss: 0.0042 | LR: 1.00e-05 | Clip: 0.027 | Steps/s: 3160 | 4412s
+[Stage 2] Step  9699328 | Avg:    19.35 | Best:    19.94 | Loss: 0.0145 | LR: 9.02e-06 | Clip: 0.026 | Steps/s: 3165 | 4426s
+[Stage 2] Step  9732096 | Avg:    21.76 | Best:    21.76 | Loss: 0.0193 | LR: 8.04e-06 | Clip: 0.025 | Steps/s: 3179 | 4441s
+[Stage 2] Step  9764864 | Avg:    15.24 | Best:    21.76 | Loss: 0.0348 | LR: 7.05e-06 | Clip: 0.025 | Steps/s: 3154 | 4456s
+[Stage 2] Step  9797632 | Avg:    19.16 | Best:    21.76 | Loss: 0.0197 | LR: 6.07e-06 | Clip: 0.024 | Steps/s: 3147 | 4471s
+[Stage 2] Step  9830400 | Avg:    14.49 | Best:    21.76 | Loss: 0.0271 | LR: 5.09e-06 | Clip: 0.023 | Steps/s: 3111 | 4487s
+[Stage 2] Step  9863168 | Avg:    15.39 | Best:    21.76 | Loss: 0.0138 | LR: 4.10e-06 | Clip: 0.023 | Steps/s: 3088 | 4503s
+[Stage 2] Step  9895936 | Avg:     8.77 | Best:    21.76 | Loss: 0.0400 | LR: 3.12e-06 | Clip: 0.022 | Steps/s: 3113 | 4517s
+[Stage 2] Step  9928704 | Avg:     5.75 | Best:    21.76 | Loss: 0.0246 | LR: 2.14e-06 | Clip: 0.021 | Steps/s: 3079 | 4534s
+[Stage 2] Step  9961472 | Avg:     9.87 | Best:    21.76 | Loss: 0.0128 | LR: 1.16e-06 | Clip: 0.021 | Steps/s: 3063 | 4549s
+[Stage 2] Step  9994240 | Avg:     4.69 | Best:    21.76 | Loss: 0.0387 | LR: 1.00e-06 | Clip: 0.020 | Steps/s: 3074 | 4565s
+[Stage 2] Step 10000000 | Avg:     3.68 | Best:    21.76 | Loss: 0.0364 | LR: 1.00e-06 | Clip: 0.020 | Steps/s: 4646 | 4571s
+
+[Stage 2] Done in 4571s. Best avg: 21.76, Final avg: 3.68, Steps: 10000000, Steps/s: 4646
+
+Stage 2 result: best_avg=21.76, steps=10000000
+
+============================================================
+  FINAL: Stage1 best=251.10  Stage2 best=21.76
+  Total steps: 12752512
+============================================================
+
+Final Stage 1 (BipedalWalker-v3) Avg Reward: 251.10
+Final Stage 2 (Hardcore-v3) Avg Reward: 21.76

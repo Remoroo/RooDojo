@@ -1,0 +1,36 @@
+commit	best_solver	trans_std_mm	rot_std_deg	trans_err_vs_gt_mm	rot_err_vs_gt_deg	status	description
+baseline	daniilidis	55.6630	2.3510	10.8686	12.9076	keep	baseline test, locked validation set
+8e7c45a	daniilidis	55.6630	2.3510	12.9076	0.3824	neutral	SOLVEPNP_IPPE fix: switch from IPPE_SQUARE to IPPE with disambiguation
+exp2	daniilidis	56.8800	2.3510	12.9076	0.3824	regress	50 poses, hemispheric_grid, distance=0.6
+exp3	daniilidis	57.3600	2.3510	12.9076	0.3824	regress	60 poses, diverse, distance=0.5
+exp4	park	50.5000	2.3510	12.9076	0.3824	keep	50 poses, diverse, distance=1.0 (match validation)
+exp5	daniilidis	50.1788	2.9423	57.8914	2.4695	keep	100 poses, diverse, distance=1.0
+exp6	horaud	55.5548	2.2885	214.1569	6.9945	regress	150 poses, trajectory_arc, distance=1.0
+exp7	daniilidis	49.5393	2.5190	44.8335	1.1858	keep	200 poses, diverse, distance=1.0
+exp8	daniilidis	49.4895	2.4339	207.5917	7.7580	neutral	300 poses, diverse, distance=1.0 (no improvement over 200)
+exp9	daniilidis	52.2237	2.3764	220.5886	6.6622	regress	200 poses, diverse, distance=0.8 (worse than 1.0)
+exp10	park	61.9704	4.5814	235.4824	9.6456	regress	200 poses, jitter, distance=1.0 (worse than diverse)
+exp11	tsai	51.8637	3.9814	268.7894	10.0872	regress	200 poses, diverse, distance=1.0 with iterative refinement (overfits)
+0658cd58f	daniilidis	48.1620	2.1626	28.4915	0.3079	keep	200 poses, diverse, distance=1.0 with outlier rejection (90th percentile)
+exp13	daniilidis	47.9216	2.3327	210.5328	7.7161	keep	250 poses, diverse, distance=1.0 with outlier rejection
+exp14	daniilidis	47.3515	2.2045	206.3181	7.5257	keep	500 poses, diverse, distance=1.0 with outlier rejection
+exp15	daniilidis	48.6274	2.1872	213.0805	6.4388	regress	500 poses, diverse, distance=0.9 (worse than 1.0)
+exp16	daniilidis	50.7625	2.3510	12.9076	0.3824	regress	500 poses, diverse, distance=1.0 with 70th percentile outlier rejection (too aggressive)
+exp17	daniilidis	47.9224	2.1428	210.5680	7.2515	neutral	500 poses, hemispheric_grid, distance=1.0 (same as diverse)
+exp18	horaud	54.6763	2.1163	227.7819	7.0689	regress	500 poses, diverse, distance=0.5 (closer to GT but worse generalization)
+exp19	horaud	51.8306	2.1152	221.7939	7.0251	regress	500 poses, diverse, distance=0.75 (trade-off between val and GT)
+exp20	daniilidis	53.0824	2.0976	225.6121	6.8884	regress	500 poses, diverse, distance=0.6 (better GT error but worse val)
+exp21	daniilidis	47.3673	2.1427	33.1383	0.2652	keep	1000 poses, diverse, distance=1.0 (much better GT error!)
+exp22	daniilidis	47.4863	2.1049	32.2247	0.2475	neutral	2000 poses, diverse, distance=1.0 (plateau reached)
+exp23	daniilidis	51.2842	2.1427	33.1383	0.2652	regress	1000 poses, diverse, distance=1.0 with mean+2std threshold (worse)
+exp24	daniilidis	47.7311	2.1296	30.6315	0.2576	neutral	1000 poses, diverse, distance=1.0, seed=123 (consistent with seed=42)
+exp25	daniilidis	47.7146	2.1093	30.5053	0.1490	neutral	5000 poses, diverse, distance=1.0 (plateau confirmed)
+exp26	horaud	56.2409	2.1240	15.5132	0.2482	regress	1000 poses, trajectory_arc, distance=1.0 (worse than diverse)
+exp27	daniilidis	48.4707	2.1023	26.4276	0.2368	regress	1000 poses, diverse, distance=0.95 (slightly worse than 1.0)
+fa688ff	horaud	54.4735	2.1179	5.8719	0.0316	regress	1000 poses, diverse, distance=0.5 (worse than 1.0, but better GT error)
+fa688ff	daniilidis	99.5924	2.3292	164.8838	1.5641	regress	1000 poses, diverse, distance=1.5 (much worse than 1.0)
+9d0f5a8	daniilidis	47.5914	2.1526	33.6651	0.3770	neutral	1000 poses, hemispheric_grid, distance=1.0 (same as diverse)
+48e44e7	daniilidis	51.2865	2.1427	33.1383	0.2652	regress	1000 poses, diverse, distance=1.0 with 95th percentile outlier rejection (worse)
+b7f1fe1	daniilidis	51.2849	2.1427	33.1383	0.2652	regress	1000 poses, diverse, distance=1.0 with mean+2std threshold (worse)
+-e 2d563e2	horaud	9.5443	1.4739	8.8174	0.2601	keep	IPPE multi-sol + depth filter
+9581ef5	dcorr_global_daniilidis	0.1656	0.4907	5.9376	0.2078	keep	1280x720 res + depth-corrected PnP via geometric prior + global BA (calib+val corners)

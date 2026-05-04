@@ -1,6 +1,6 @@
 # RooDojo
 
-> The training dojo for Remoroo. Seven workflow benchmarks, one universal
+> The training dojo for Remoroo. Eight workflow benchmarks, one universal
 > contract, every commit a logged experiment.
 
 [Remoroo](https://www.remoroo.com) is an autonomous coding agent that reads a
@@ -16,7 +16,7 @@ This is **not** a software-engineering test suite. For the SWE benchmark
 RooDojo is for the workflows where the loop is **research-shaped**:
 real metric, real eval set, real iteration log.
 
-## The seven workflows
+## The eight workflows
 
 | # | Workflow | Domain | Headline metric | Status | Best |
 |---|---|---|---|---|---|
@@ -25,8 +25,9 @@ real metric, real eval set, real iteration log.
 | 3 | [Quadruped (dog_run)](./reinforcement-learning/dog-run-locomotion) | RL · Locomotion | s2 avg reward (target ≥ 700) | iterating | 169.34 (baseline) |
 | 4 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | — |
 | 5 | [Higgs Boost](./scientific-ml/higgs-boost) | Scientific ML · Tabular | ROC AUC on Baldi 2014 test split (target ≥ 0.733 → 0.880) | iterating | — |
-| 6 | [Neural Voice Synthesis (TTS)](./speech/tts-neural-voice) | Speech · TTS | `mel_recon_loss` | open frontier | — |
-| 7 | [Speech Recognition (STT)](./speech/asr-speech-recognition) | Speech · STT | WER (target ≤ 5%) | open frontier | — |
+| 6 | [Variant Triage](./scientific-ml/variant-triage) | Scientific ML · Clinical genomics | ROC AUC on ClinVar 2024+ time-holdout (target ≥ 0.85 → 0.92) | iterating | — |
+| 7 | [Neural Voice Synthesis (TTS)](./speech/tts-neural-voice) | Speech · TTS | `mel_recon_loss` | open frontier | — |
+| 8 | [Speech Recognition (STT)](./speech/asr-speech-recognition) | Speech · STT | WER (target ≤ 5%) | open frontier | — |
 
 Status taxonomy:
 
@@ -57,11 +58,12 @@ got better at X" mean something across wildly different domains.
 5. **One headline metric.** Plus optional cross-checks that never inform the
    optimiser. Anti-gaming by construction.
 
-For the constrained workflows (CIFAR-10 Speedrun, Higgs Boost) the contract
-also includes **explicit budgets** — wall-clock, parameter count, CPU /
-memory caps — enforced by the harness, not by trust. Cheating the budget
-shows up as a `time_exceeded` / `params_exceeded` / `mem_exceeded` row in
-the trace.
+For the constrained workflows (CIFAR-10 Speedrun, Higgs Boost, Variant
+Triage) the contract also includes **explicit budgets** — wall-clock,
+parameter count, CPU / memory caps — enforced by the harness, not by
+trust. Cheating the budget shows up as a `time_exceeded` /
+`params_exceeded` / `mem_exceeded` / `artifact_too_large` row in the
+trace.
 
 ## Repo layout
 
@@ -81,7 +83,8 @@ RooDojo/
 │   └── cifar10-speedrun/                  ← ≤ 1 M params · 15 min on Mac
 ├── scientific-ml/
 │   ├── README.md
-│   └── higgs-boost/                       ← 1 CPU · 4 GB · 5 min · Baldi 2014
+│   ├── higgs-boost/                       ← 1 CPU · 4 GB · 5 min · Baldi 2014
+│   └── variant-triage/                    ← 1 CPU · 4 GB · 10 min · ClinVar 2024+
 └── speech/
     ├── README.md
     ├── tts-neural-voice/                  ← scaffold (open frontier)
@@ -113,8 +116,9 @@ python ppo_agent.py        # or whatever `program.md` declares
 For the constrained workflows the entry point is uniform:
 
 ```bash
-cd vision/cifar10-speedrun        # or scientific-ml/higgs-boost
+cd vision/cifar10-speedrun        # or scientific-ml/{higgs-boost,variant-triage}
 pip install -r requirements.txt
+python setup_data.py              # one-time, for benchmarks that need downloads
 python run.py
 ```
 
@@ -191,8 +195,9 @@ The shortest credible path:
 ## License
 
 Code: MIT. Datasets and trained checkpoints under their respective upstream
-licenses (Box2D BipedalWalker, dm_control, CIFAR-10, UCI HIGGS, public
-TTS / ASR corpora).
+licenses (Box2D BipedalWalker, dm_control, CIFAR-10, UCI HIGGS, ClinVar
+[public domain, NIH], REVEL [CC BY 4.0, Ioannidis 2016], public TTS /
+ASR corpora).
 
 ## See also
 

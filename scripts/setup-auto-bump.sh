@@ -40,6 +40,7 @@ REPOS=(
   Remoroo/asr-speech-recognition
   Remoroo/cifar10-speedrun
   Remoroo/higgs-boost
+  Remoroo/variant-triage
 )
 
 if ! command -v gh >/dev/null 2>&1; then

@@ -42,3 +42,8 @@
 	path = scientific-ml/higgs-boost
 	url = https://github.com/Remoroo/higgs-boost.git
 	branch = main
+
+[submodule "variant-triage"]
+	path = scientific-ml/variant-triage
+	url = https://github.com/Remoroo/variant-triage.git
+	branch = main

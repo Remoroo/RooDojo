@@ -24,7 +24,7 @@ real metric, real eval set, real iteration log.
 | 2 | [Variant Triage](./scientific-ml/variant-triage) | Scientific ML · Clinical genomics | ROC AUC on ClinVar 2024+ time-holdout (target > 0.97) | **solved** | **0.9838** |
 | 3 | [PPO · BipedalWalkerHardcore](./reinforcement-learning/ppo-bipedal-hardcore) | RL · Control | s2 avg reward (target ≥ 300) | iterating | 166.58 |
 | 4 | [Quadruped (dog_run)](./reinforcement-learning/dog-run-locomotion) | RL · Locomotion | s2 avg reward (target ≥ 700) | iterating | 169.34 (baseline) |
-| 5 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | 91.71% |
+| 5 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | 93.62% |
 | 6 | [Higgs Boost](./scientific-ml/higgs-boost) | Scientific ML · Tabular | ROC AUC on Baldi 2014 test split (target ≥ 0.880) | iterating | 0.8747 |
 | 7 | [Neural Voice Synthesis (TTS)](./speech/tts-neural-voice) | Speech · TTS | `mel_recon_loss` | open frontier | — |
 | 8 | [Speech Recognition (STT)](./speech/asr-speech-recognition) | Speech · STT | WER (target ≤ 5%) | open frontier | — |

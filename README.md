@@ -20,12 +20,12 @@ real metric, real eval set, real iteration log.
 
 | # | Workflow | Domain | Headline metric | Status | Best |
 |---|---|---|---|---|---|
-| 1 | [Eye-in-Hand Calibration](./robotics/eye-in-hand-calibration) | Robotics · Perception | `trans_std_mm` (target < 1 mm) | **solved** | **0.17 mm** |
-| 2 | [PPO · BipedalWalkerHardcore](./reinforcement-learning/ppo-bipedal-hardcore) | RL · Control | s2 avg reward (target ≥ 300) | iterating | 166.58 |
-| 3 | [Quadruped (dog_run)](./reinforcement-learning/dog-run-locomotion) | RL · Locomotion | s2 avg reward (target ≥ 700) | iterating | 169.34 (baseline) |
-| 4 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | — |
-| 5 | [Higgs Boost](./scientific-ml/higgs-boost) | Scientific ML · Tabular | ROC AUC on Baldi 2014 test split (target ≥ 0.733 → 0.880) | iterating | — |
-| 6 | [Variant Triage](./scientific-ml/variant-triage) | Scientific ML · Clinical genomics | ROC AUC on ClinVar 2024+ time-holdout (target ≥ 0.85 → 0.92) | iterating | — |
+| 1 | [Eye-in-Hand Calibration](./robotics/eye-in-hand-calibration) | Robotics · Perception | `trans_std_mm` (target < 1 mm) | **solved** | **0.166 mm** |
+| 2 | [Variant Triage](./scientific-ml/variant-triage) | Scientific ML · Clinical genomics | ROC AUC on ClinVar 2024+ time-holdout (target > 0.97) | **solved** | **0.9838** |
+| 3 | [PPO · BipedalWalkerHardcore](./reinforcement-learning/ppo-bipedal-hardcore) | RL · Control | s2 avg reward (target ≥ 300) | iterating | 166.58 |
+| 4 | [Quadruped (dog_run)](./reinforcement-learning/dog-run-locomotion) | RL · Locomotion | s2 avg reward (target ≥ 700) | iterating | 169.34 (baseline) |
+| 5 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | 91.71% |
+| 6 | [Higgs Boost](./scientific-ml/higgs-boost) | Scientific ML · Tabular | ROC AUC on Baldi 2014 test split (target ≥ 0.880) | iterating | 0.8747 |
 | 7 | [Neural Voice Synthesis (TTS)](./speech/tts-neural-voice) | Speech · TTS | `mel_recon_loss` | open frontier | — |
 | 8 | [Speech Recognition (STT)](./speech/asr-speech-recognition) | Speech · STT | WER (target ≤ 5%) | open frontier | — |
 
@@ -34,7 +34,7 @@ Status taxonomy:
 - **Solved** — the engine reliably hits the target metric.
 - **Iterating** — engine is in the loop, with logged experiments and partial
   progress. Some entries here have *documented plateaus* (eye-in-hand spent
-  27 experiments stuck at ~47 mm before the breakthrough) — the failure log
+  27 experiments stuck at ~47 mm before breaking through to 0.166 mm) — the failure log
   is part of the receipt, not a bug to hide.
 - **Open frontier** — harness locked, eval set defined, baseline pending.
 

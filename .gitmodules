@@ -47,3 +47,6 @@
 	path = scientific-ml/variant-triage
 	url = https://github.com/Remoroo/variant-triage.git
 	branch = main
+[submodule "robotics/ufactory_vision"]
+	path = robotics/ufactory_vision
+	url = https://github.com/Remoroo/ufactory_vision.git

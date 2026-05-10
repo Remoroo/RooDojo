@@ -1,6 +1,6 @@
 # RooDojo
 
-> The training dojo for Remoroo. Eight workflow benchmarks, one universal
+> The training dojo for Remoroo. Nine workflow benchmarks, one universal
 > contract, every commit a logged experiment.
 
 [Remoroo](https://www.remoroo.com) is an autonomous coding agent that reads a
@@ -16,18 +16,19 @@ This is **not** a software-engineering test suite. For the SWE benchmark
 RooDojo is for the workflows where the loop is **research-shaped**:
 real metric, real eval set, real iteration log.
 
-## The eight workflows
+## The nine workflows
 
 | # | Workflow | Domain | Headline metric | Status | Best |
 |---|---|---|---|---|---|
 | 1 | [Eye-in-Hand Calibration](./robotics/eye-in-hand-calibration) | Robotics · Perception | `trans_std_mm` (target < 1 mm) | **solved** | **0.166 mm** |
-| 2 | [Variant Triage](./scientific-ml/variant-triage) | Scientific ML · Clinical genomics | ROC AUC on ClinVar 2024+ time-holdout (target > 0.97) | **solved** | **0.9838** |
-| 3 | [PPO · BipedalWalkerHardcore](./reinforcement-learning/ppo-bipedal-hardcore) | RL · Control | s2 avg reward (target ≥ 300) | iterating | 166.58 |
-| 4 | [Quadruped (dog_run)](./reinforcement-learning/dog-run-locomotion) | RL · Locomotion | s2 avg reward (target ≥ 700) | iterating | 169.34 (baseline) |
-| 5 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | 93.62% |
-| 6 | [Higgs Boost](./scientific-ml/higgs-boost) | Scientific ML · Tabular | ROC AUC on Baldi 2014 test split (target ≥ 0.880) | iterating | 0.8747 |
-| 7 | [Neural Voice Synthesis (TTS)](./speech/tts-neural-voice) | Speech · TTS | `mel_recon_loss` | open frontier | — |
-| 8 | [Speech Recognition (STT)](./speech/asr-speech-recognition) | Speech · STT | WER (target ≤ 5%) | open frontier | — |
+| 2 | [ufactory_vision Tabletop Grasping](./robotics/ufactory_vision) | Robotics · Closed-loop grasping | `success_rate` ≥ 0.85 AND `mean_time_to_pick` ≤ 6 s on locked panel (5 obj × 20 trials) | iterating | — (baseline ≈ 0.50, scaffold landed) |
+| 3 | [Variant Triage](./scientific-ml/variant-triage) | Scientific ML · Clinical genomics | ROC AUC on ClinVar 2024+ time-holdout (target > 0.97) | **solved** | **0.9838** |
+| 4 | [PPO · BipedalWalkerHardcore](./reinforcement-learning/ppo-bipedal-hardcore) | RL · Control | s2 avg reward (target ≥ 300) | iterating | 166.58 |
+| 5 | [Quadruped (dog_run)](./reinforcement-learning/dog-run-locomotion) | RL · Locomotion | s2 avg reward (target ≥ 700) | iterating | 169.34 (baseline) |
+| 6 | [CIFAR-10 Speedrun](./vision/cifar10-speedrun) | Vision · Constrained | top-1 acc on locked CIFAR-10 test (target ≥ 95%) | iterating | 93.62% |
+| 7 | [Higgs Boost](./scientific-ml/higgs-boost) | Scientific ML · Tabular | ROC AUC on Baldi 2014 test split (target ≥ 0.880) | iterating | 0.8747 |
+| 8 | [Neural Voice Synthesis (TTS)](./speech/tts-neural-voice) | Speech · TTS | `mel_recon_loss` | open frontier | — |
+| 9 | [Speech Recognition (STT)](./speech/asr-speech-recognition) | Speech · STT | WER (target ≤ 5%) | open frontier | — |
 
 Status taxonomy:
 

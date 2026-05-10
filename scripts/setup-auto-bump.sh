@@ -41,6 +41,7 @@ REPOS=(
   Remoroo/cifar10-speedrun
   Remoroo/higgs-boost
   Remoroo/variant-triage
+  Remoroo/ufactory_vision
 )
 
 if ! command -v gh >/dev/null 2>&1; then
